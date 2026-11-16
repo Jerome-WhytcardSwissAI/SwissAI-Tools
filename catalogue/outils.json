@@ -1,0 +1,683 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-11-16",
+  "description": "Index ouvert de ressources liées à la Suisse; chaque fiche indique le type de lien suisse et des sources externes.",
+  "entries": [
+    {
+      "id": "termdat-api",
+      "name": "TERMDAT — API",
+      "kind": "api",
+      "topics": [
+        "langues",
+        "administration",
+        "terminologie"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Recherche de terminologie administrative officielle dans les langues nationales.",
+      "url": "https://api.termdat.bk.admin.ch/swagger/index.html",
+      "code_url": null,
+      "sources": [
+        "https://api.termdat.bk.admin.ch/swagger/index.html"
+      ],
+      "limitations_fr": "Les conditions de réutilisation du contenu sont distinctes de l'accès technique à l'API.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "federal-writing-guidelines",
+      "name": "Swiss Federal Writing Guidelines",
+      "kind": "ressource",
+      "topics": [
+        "langues",
+        "redaction",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Ressource libre de relecture des textes selon les conventions rédactionnelles de la Confédération.",
+      "url": "https://github.com/swiss/swiss-federal-writing-guidelines",
+      "code_url": "https://github.com/swiss/swiss-federal-writing-guidelines",
+      "sources": [
+        "https://www.opensource.admin.ch/en/softwares/6lv7ss/",
+        "https://github.com/swiss/swiss-federal-writing-guidelines"
+      ],
+      "limitations_fr": "Conventions institutionnelles : elles ne remplacent pas le ton d'une conversation professionnelle.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "ofrom",
+      "name": "OFROM — français parlé en Suisse romande",
+      "kind": "corpus",
+      "topics": [
+        "langues",
+        "fr-ch",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Corpus universitaire de français oral romand, avec enregistrements et transcriptions.",
+      "url": "https://ofrom.unine.ch/",
+      "code_url": null,
+      "sources": [
+        "https://ofrom.unine.ch/",
+        "https://ofrom.unine.ch/index.php?page=citations"
+      ],
+      "limitations_fr": "Données sous CC BY-NC-SA 4.0 : l'usage commercial nécessite un examen des droits.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "apertus",
+      "name": "Apertus — modèle ouvert",
+      "kind": "modele",
+      "topics": [
+        "intelligence-artificielle",
+        "llm",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Famille de modèles de langue ouverts du projet Swiss AI Initiative (ETH Zurich/EPFL).",
+      "url": "https://www.swiss-ai.org/swiss-ai-projects",
+      "code_url": "https://github.com/swiss-ai",
+      "sources": [
+        "https://www.swiss-ai.org/swiss-ai-projects",
+        "https://github.com/swiss-ai/www-apertus/blob/main/content/pages/documentation.md"
+      ],
+      "limitations_fr": "Poids, variantes, ressources matérielles et conditions d'usage à vérifier selon la version.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-ai-projects",
+      "name": "Swiss AI Initiative — projets",
+      "kind": "catalogue",
+      "topics": [
+        "intelligence-artificielle",
+        "recherche",
+        "innovation"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Sélection de projets de recherche suisses en intelligence artificielle.",
+      "url": "https://www.swiss-ai.org/swiss-ai-projects",
+      "code_url": null,
+      "sources": [
+        "https://www.swiss-ai.org/swiss-ai-projects"
+      ],
+      "limitations_fr": "Sélection de projets, non catalogue exhaustif de tous les acteurs de l'IA.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "infomaniak-ai",
+      "name": "Infomaniak AI Services",
+      "kind": "service",
+      "topics": [
+        "intelligence-artificielle",
+        "api",
+        "infrastructure"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Accès à des modèles d'IA via service et API documentés par Infomaniak.",
+      "url": "https://www.infomaniak.com/fr/support/faq/admin2/ai-tools",
+      "code_url": null,
+      "sources": [
+        "https://www.infomaniak.com/fr/support/faq/admin2/ai-tools"
+      ],
+      "limitations_fr": "API avec token et conditions d'offre ; vérifier chaque modèle et ses modalités.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "infomaniak-cloud",
+      "name": "Infomaniak Public Cloud",
+      "kind": "infrastructure",
+      "topics": [
+        "cloud",
+        "developpement",
+        "infrastructure"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Infrastructure OpenStack avec stockage S3, Kubernetes et API, dans des régions suisses.",
+      "url": "https://www.infomaniak.com/fr/support/faq/2601/guide-de-demarrage-public-cloud",
+      "code_url": null,
+      "sources": [
+        "https://www.infomaniak.com/fr/support/faq/2601/guide-de-demarrage-public-cloud"
+      ],
+      "limitations_fr": "Service commercial ; emplacement et paramètres des ressources dépendent de la configuration.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissgpt",
+      "name": "SwissGPT — AlpineAI",
+      "kind": "service",
+      "topics": [
+        "intelligence-artificielle",
+        "entreprise"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Service d'IA pour entreprises proposé par la société suisse AlpineAI.",
+      "url": "https://alpineai.swiss/",
+      "code_url": null,
+      "sources": [
+        "https://alpineai.swiss/en/medien/"
+      ],
+      "limitations_fr": "Vérifier directement l'offre, l'hébergement et les fonctionnalités actuelles avant une intégration.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "lumo",
+      "name": "Lumo — Proton",
+      "kind": "service",
+      "topics": [
+        "intelligence-artificielle",
+        "confidentialite"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Assistant d'IA confidentiel développé par Proton, acteur suisse.",
+      "url": "https://proton.me/fr/lumo",
+      "code_url": null,
+      "sources": [
+        "https://proton.me/fr/lumo"
+      ],
+      "limitations_fr": "Produit conversationnel ; l'existence d'une API publique n'est pas établie ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "oss-confederation",
+      "name": "Catalogue OSS de la Confédération",
+      "kind": "catalogue",
+      "topics": [
+        "open-source",
+        "administration",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Index public de logiciels publiés en code ouvert par les administrations suisses.",
+      "url": "https://www.opensource.admin.ch/fr/",
+      "code_url": null,
+      "sources": [
+        "https://www.opensource.admin.ch/fr/"
+      ],
+      "limitations_fr": "La couverture dépend des organismes et des logiciels publiés dans le catalogue.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "designsystem-swiss",
+      "name": "Design System de la Confédération",
+      "kind": "bibliotheque",
+      "topics": [
+        "design",
+        "open-source",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Composants et ressources d'interface des sites de l'administration suisse.",
+      "url": "https://github.com/swiss/designsystem",
+      "code_url": "https://github.com/swiss/designsystem",
+      "sources": [
+        "https://www.opensource.admin.ch/fr/softwares/2odubf/"
+      ],
+      "limitations_fr": "Usage, licences et compatibilité à examiner pour chaque composant.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bootstrap-switzerland",
+      "name": "Bootstrap Switzerland",
+      "kind": "bibliotheque",
+      "topics": [
+        "design",
+        "open-source",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Thème Bootstrap adapté au design de la Confédération suisse.",
+      "url": "https://github.com/swiss/bootstrap-switzerland",
+      "code_url": "https://github.com/swiss/bootstrap-switzerland",
+      "sources": [
+        "https://www.opensource.admin.ch/fr/softwares/ywckzw/"
+      ],
+      "limitations_fr": "Projet indiqué en développement dans le catalogue officiel.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "opendata-swiss",
+      "name": "opendata.swiss — API CKAN",
+      "kind": "api",
+      "topics": [
+        "donnees-ouvertes",
+        "administration",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Catalogue national des jeux de données publiques avec API de métadonnées CKAN.",
+      "url": "https://handbook.opendata.swiss/fr/content/nutzen/api-nutzen.html",
+      "code_url": null,
+      "sources": [
+        "https://handbook.opendata.swiss/fr/content/nutzen/api-nutzen.html"
+      ],
+      "limitations_fr": "La licence et les conditions de chaque jeu de données sont indépendantes du catalogue.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "i14y",
+      "name": "I14Y — métadonnées et APIs",
+      "kind": "api",
+      "topics": [
+        "donnees-ouvertes",
+        "administration",
+        "interop"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Catalogue suisse des métadonnées, définitions, interfaces et prestations publiques.",
+      "url": "https://apiconsole.i14y.admin.ch/",
+      "code_url": null,
+      "sources": [
+        "https://www.bfs.admin.ch/fr/plateforme-interoperabilite",
+        "https://apiconsole.i14y.admin.ch/"
+      ],
+      "limitations_fr": "API publique pour consultation occasionnelle ; API partenaire avec authentification.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "zefix",
+      "name": "Zefix — registre du commerce",
+      "kind": "api",
+      "topics": [
+        "entreprise",
+        "administration",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Recherche d'entreprises inscrites au registre du commerce et API REST de l'Office fédéral de la justice.",
+      "url": "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix",
+      "code_url": null,
+      "sources": [
+        "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix"
+      ],
+      "limitations_fr": "API REST : modalités et accès à demander ; pas d'export intégral libre du registre.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "fedlex",
+      "name": "Fedlex — droit fédéral",
+      "kind": "donnees",
+      "topics": [
+        "droit",
+        "administration",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Portail officiel du droit fédéral, des recueils et publications juridiques.",
+      "url": "https://www.fedlex.admin.ch/",
+      "code_url": null,
+      "sources": [
+        "https://www.fedlex.admin.ch/",
+        "https://github.com/malkreide/fedlex-mcp"
+      ],
+      "limitations_fr": "La présentation et les interfaces techniques varient selon le corpus juridique.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "geoadmin",
+      "name": "geo.admin.ch — APIs géographiques",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "donnees-ouvertes",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Cartes et géodonnées officielles intégrables dans des applications.",
+      "url": "https://www.geo.admin.ch/fr/interface-de-programmation-api",
+      "code_url": null,
+      "sources": [
+        "https://www.geo.admin.ch/fr/interface-de-programmation-api",
+        "https://www.opensource.admin.ch/fr/softwares/a0306q/"
+      ],
+      "limitations_fr": "Droits de réutilisation et actualité variables selon les couches de données.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "ofs-statistics",
+      "name": "OFS — APIs statistiques",
+      "kind": "api",
+      "topics": [
+        "statistiques",
+        "donnees-ouvertes",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accès programmable aux statistiques suisses via PxWeb, SDMX et autres APIs officielles.",
+      "url": "https://statistik.admin.ch/fr/donnees/api",
+      "code_url": null,
+      "sources": [
+        "https://statistik.admin.ch/fr/donnees/api"
+      ],
+      "limitations_fr": "Plusieurs APIs distinctes ; consulter la documentation du jeu de données visé.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "snb-data",
+      "name": "Banque nationale suisse — API",
+      "kind": "api",
+      "topics": [
+        "finance",
+        "statistiques",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST des tableaux et graphiques du portail de données de la BNS, en CSV/JSON.",
+      "url": "https://data.snb.ch/en/help_api",
+      "code_url": null,
+      "sources": [
+        "https://data.snb.ch/en/help_api"
+      ],
+      "limitations_fr": "Respecter les recommandations de rafraîchissement (lastUpdate, ETag) du fournisseur.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "meteosuisse-open-data",
+      "name": "MétéoSuisse — Open Data",
+      "kind": "donnees",
+      "topics": [
+        "meteo",
+        "climat",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Mesures, prévisions et données climatologiques ouvertes avec téléchargement automatisable.",
+      "url": "https://opendatadocs.meteoswiss.ch/",
+      "code_url": null,
+      "sources": [
+        "https://opendatadocs.meteoswiss.ch/",
+        "https://opendatadocs.meteoswiss.ch/general/download"
+      ],
+      "limitations_fr": "Diffusion automatisée via fichiers et STAC ; API de requêtes unitaires annoncée progressivement.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-linked-geodata",
+      "name": "Géodonnées liées — SPARQL",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "donnees-ouvertes",
+        "interop"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Point SPARQL officiel permettant de relier géodonnées et autres graphes de données.",
+      "url": "https://geo.ld.admin.ch/sparql/",
+      "code_url": null,
+      "sources": [
+        "https://www.geo.admin.ch/fr/service-linked-data-lier-les-geodonnees"
+      ],
+      "limitations_fr": "Couverture dépendante des jeux publiés en données liées.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissdec-elm",
+      "name": "Swissdec ELM — norme salaire",
+      "kind": "norme",
+      "topics": [
+        "salaires",
+        "entreprise",
+        "interop"
+      ],
+      "swiss_relation": [
+        "norme-suisse"
+      ],
+      "summary_fr": "Norme suisse de déclaration et transmission des données salariales (ELM).",
+      "url": "https://www.swissdec.ch/fr/elm",
+      "code_url": null,
+      "sources": [
+        "https://www.swissdec.ch/fr/elm"
+      ],
+      "limitations_fr": "Une norme n'est pas une API publique universelle ; versions et certification doivent être vérifiées.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "six-qr-bill",
+      "name": "SIX — QR-facture",
+      "kind": "norme",
+      "topics": [
+        "paiements",
+        "facturation",
+        "entreprise"
+      ],
+      "swiss_relation": [
+        "norme-suisse",
+        "organisation-suisse"
+      ],
+      "summary_fr": "Spécifications d'implémentation et outil de validation du code Swiss QR pour les factures.",
+      "url": "https://www.six-group.com/fr/products-services/banking-services/payment-standardization/standards/qr-bill.html",
+      "code_url": null,
+      "sources": [
+        "https://www.six-group.com/fr/products-services/banking-services/payment-standardization/standards/qr-bill.html"
+      ],
+      "limitations_fr": "Les versions des guidelines coexistent pendant des périodes de transition.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "six-payment-standards",
+      "name": "SIX — Swiss Payment Standards",
+      "kind": "norme",
+      "topics": [
+        "paiements",
+        "banque",
+        "interop"
+      ],
+      "swiss_relation": [
+        "norme-suisse",
+        "organisation-suisse"
+      ],
+      "summary_fr": "Documentation suisse des messages de paiement, statuts et cash management.",
+      "url": "https://www.six-group.com/en/products-services/banking-services/payment-standardization.html",
+      "code_url": null,
+      "sources": [
+        "https://www.six-group.com/en/products-services/banking-services/payment-standardization.html"
+      ],
+      "limitations_fr": "C'est une famille de formats et de règles, pas un connecteur bancaire prêt à l'emploi.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-public-data-mcp",
+      "name": "Swiss Public Data MCP — portefeuille",
+      "kind": "catalogue",
+      "topics": [
+        "mcp",
+        "donnees-ouvertes",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Index indépendant de serveurs MCP donnant accès à diverses données publiques suisses.",
+      "url": "https://github.com/malkreide/swiss-public-data-mcp",
+      "code_url": "https://github.com/malkreide/swiss-public-data-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-public-data-mcp"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; chaque serveur a son propre statut et ses limites.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "termdat-mcp",
+      "name": "termdat-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "langues",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour consulter la terminologie officielle TERMDAT.",
+      "url": "https://github.com/malkreide/termdat-mcp",
+      "code_url": "https://github.com/malkreide/termdat-mcp",
+      "sources": [
+        "https://github.com/malkreide/termdat-mcp",
+        "https://api.termdat.bk.admin.ch/swagger/index.html"
+      ],
+      "limitations_fr": "Client tiers non affilié à la Chancellerie fédérale ; conditions de réutilisation TERMDAT distinctes.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-statistics-mcp",
+      "name": "swiss-statistics-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "statistiques",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour interroger les statistiques OFS via PxWeb.",
+      "url": "https://github.com/malkreide/swiss-statistics-mcp",
+      "code_url": "https://github.com/malkreide/swiss-statistics-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-statistics-mcp",
+        "https://statistik.admin.ch/fr/donnees/api"
+      ],
+      "limitations_fr": "Client tiers ; schémas et données suivent les APIs officielles.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "register-mcp",
+      "name": "register-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "entreprise",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour les données d'entreprises Zefix et les publications associées.",
+      "url": "https://github.com/malkreide/register-mcp",
+      "code_url": "https://github.com/malkreide/register-mcp",
+      "sources": [
+        "https://github.com/malkreide/register-mcp",
+        "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix"
+      ],
+      "limitations_fr": "Client tiers ; les restrictions du registre et la protection des personnes restent applicables.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "fedlex-mcp",
+      "name": "fedlex-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour consulter le droit fédéral et des sources juridiques suisses.",
+      "url": "https://github.com/malkreide/fedlex-mcp",
+      "code_url": "https://github.com/malkreide/fedlex-mcp",
+      "sources": [
+        "https://github.com/malkreide/fedlex-mcp",
+        "https://www.fedlex.admin.ch/"
+      ],
+      "limitations_fr": "Client tiers, non source juridique officielle en lui-même.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swisstopo-mcp",
+      "name": "swisstopo-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "geographie",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant d'accès aux APIs et géodonnées de swisstopo.",
+      "url": "https://github.com/malkreide/swisstopo-mcp",
+      "code_url": "https://github.com/malkreide/swisstopo-mcp",
+      "sources": [
+        "https://github.com/malkreide/swisstopo-mcp",
+        "https://www.geo.admin.ch/fr/interface-de-programmation-api"
+      ],
+      "limitations_fr": "Client tiers, géodonnées soumises aux conditions de leurs éditeurs.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "i14y-mcp",
+      "name": "i14y-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "administration",
+        "interop"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour découvrir catalogues, concepts et APIs via I14Y.",
+      "url": "https://github.com/malkreide/i14y-mcp",
+      "code_url": "https://github.com/malkreide/i14y-mcp",
+      "sources": [
+        "https://github.com/malkreide/i14y-mcp",
+        "https://apiconsole.i14y.admin.ch/"
+      ],
+      "limitations_fr": "Client tiers ; certaines ressources trouvées par I14Y sont soumises à licence ou authentification.",
+      "reviewed_at": "2026-11-16"
+    }
+  ]
+}
