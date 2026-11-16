@@ -104,12 +104,14 @@
       "swiss_relation": [
         "institution-suisse"
       ],
-      "summary_fr": "Famille de modèles de langue ouverts du projet Swiss AI Initiative (ETH Zurich/EPFL).",
-      "url": "https://www.swiss-ai.org/swiss-ai-projects",
+      "summary_fr": "Famille de modèles ouverts de la Swiss AI Initiative ; la version 1.5 comporte notamment des variantes 8B et 70B.",
+      "url": "https://apertus-ai.org/",
       "code_url": "https://github.com/swiss-ai",
       "sources": [
         "https://www.swiss-ai.org/swiss-ai-projects",
-        "https://github.com/swiss-ai/www-apertus/blob/main/content/pages/documentation.md"
+        "https://github.com/swiss-ai/www-apertus/blob/main/content/pages/documentation.md",
+        "https://apertus-ai.org/",
+        "https://apertus-ai.org/articles/2026-07-apertus-1-5"
       ],
       "limitations_fr": "Poids, variantes, ressources matérielles et conditions d'usage à vérifier selon la version.",
       "reviewed_at": "2026-11-16"
