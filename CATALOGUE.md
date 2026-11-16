@@ -106,7 +106,7 @@ Les ressources ne sont pas classées par valeur commerciale. Elles sont groupée
 
 | Ressource | Usage | Lien avec la Suisse |
 | --- | --- | --- |
-| [Apertus — modèle ouvert](https://www.swiss-ai.org/swiss-ai-projects) | Famille de modèles de langue ouverts du projet Swiss AI Initiative (ETH Zurich/EPFL). | Institution suisse |
+| [Apertus — modèle ouvert](https://apertus-ai.org/) | Famille de modèles ouverts de la Swiss AI Initiative ; la version 1.5 comporte notamment des variantes 8B et 70B. | Institution suisse |
 | [SwissBERT](https://github.com/ZurichNLP/swissbert) | Modèle multilingue spécialisé dans les textes suisses, proposé par ZurichNLP. | Institution suisse |
 
 ## Services et applications (8)
