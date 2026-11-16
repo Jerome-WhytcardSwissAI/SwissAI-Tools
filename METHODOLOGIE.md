@@ -46,3 +46,23 @@ La date `2026-11-16` désigne la consultation documentaire ayant servi à consti
 Ce dépôt public contient uniquement des descriptions originales et des liens vers des ressources publiques. Il ne contient aucun jeton API, secret d'authentification, contact personnel extrait d'une boîte mail ou copie d'un corpus dont les droits seraient incertains.
 
 Aucune licence générale n'est présumée pour les ressources répertoriées. La licence du **catalogue lui-même** demeure à choisir par le propriétaire du dépôt.
+
+## Recherche multi-domaines avec Parallel — 16 novembre 2026
+
+L'élargissement a été réalisé en parallèle sur l'infrastructure suisse, les modèles IA, les langues, les bibliothèques, l'administration, les paiements, la comptabilité, la logistique, la santé, la mobilité et les sciences. Une recherche approfondie a complété les recherches ciblées.
+
+Les résultats ont été rapprochés de la base existante et dédoublonnés par identifiant. **139 fiches** sont présentes, dont **44 MCP** et **42 API**.
+
+Les MCP issus du [portefeuille suisse de données publiques](https://github.com/malkreide/swiss-public-data-mcp/blob/main/portfolio.json) sont décrits sur la base de son registre JSON : celui-ci déclare 42 serveurs actifs et indique une date interne de vérification du 18 août 2026. Les deux projets généralistes n'utilisant pas spécifiquement des données suisses et les projets archivés n'ont pas été importés sous la seule étiquette « données suisses ». Le niveau de maturité annoncé par l'éditeur n'a pas été testé ici.
+
+Les autres projets ont été sélectionnés principalement à partir de documentation d'éditeur, d'organismes publics, d'universités et de dépôts officiels. Des pages peuvent évoluer ou disparaître : la présence d'une URL HTTPS et d'un titre dans une recherche ne constitue pas une validation automatique du service.
+
+### Ce qui reste inconnu
+
+- fonctionnement effectif de chaque API et de chaque serveur MCP ;
+- sécurité et maintenance des intégrations communautaires ;
+- conditions précises d'utilisation commerciale, de réutilisation de corpus et de traitement de données ;
+- disponibilité des offres selon le compte et la région d'hébergement ;
+- couverture des projets qui ne sont pas indexés publiquement.
+
+Le catalogue conserve **les données utiles à l'exploration** sans transformer ces inconnues en affirmations.
