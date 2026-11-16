@@ -1,73 +1,95 @@
 {
   "schema_version": "1.0",
   "updated_at": "2026-11-16",
-  "description": "Index ouvert de ressources liées à la Suisse; chaque fiche indique le type de lien suisse et des sources externes.",
+  "description": "Catalogue ouvert et sourcé de ressources suisses, enrichi par une recherche Parallel multi-domaines. Une fiche n'implique pas test de fonctionnement.",
   "entries": [
     {
-      "id": "termdat-api",
-      "name": "TERMDAT — API",
+      "id": "abacus-apihub",
+      "name": "Abacus API Hub",
       "kind": "api",
       "topics": [
-        "langues",
-        "administration",
-        "terminologie"
+        "comptabilite",
+        "entreprise",
+        "api"
       ],
       "swiss_relation": [
-        "administration-suisse",
-        "donnees-suisses"
+        "organisation-suisse"
       ],
-      "summary_fr": "Recherche de terminologie administrative officielle dans les langues nationales.",
-      "url": "https://api.termdat.bk.admin.ch/swagger/index.html",
+      "summary_fr": "Portail officiel des API et interfaces d'intégration de la suite de gestion Abacus.",
+      "url": "https://apihub.abacus.ch/",
       "code_url": null,
       "sources": [
-        "https://api.termdat.bk.admin.ch/swagger/index.html"
+        "https://apihub.abacus.ch/",
+        "https://downloads.abacus.ch/en/downloads/abaconnect/documentation"
       ],
-      "limitations_fr": "Les conditions de réutilisation du contenu sont distinctes de l'accès technique à l'API.",
+      "limitations_fr": "Accès et capacités selon les licences et versions Abacus.",
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "federal-writing-guidelines",
-      "name": "Swiss Federal Writing Guidelines",
-      "kind": "ressource",
+      "id": "abaninja-api",
+      "name": "AbaNinja API",
+      "kind": "api",
       "topics": [
-        "langues",
-        "redaction",
-        "open-source"
+        "comptabilite",
+        "entreprise",
+        "api"
       ],
       "swiss_relation": [
-        "administration-suisse"
+        "organisation-suisse"
       ],
-      "summary_fr": "Ressource libre de relecture des textes selon les conventions rédactionnelles de la Confédération.",
-      "url": "https://github.com/swiss/swiss-federal-writing-guidelines",
-      "code_url": "https://github.com/swiss/swiss-federal-writing-guidelines",
+      "summary_fr": "Interfaces API pour les factures, produits, banque et fonctions de gestion AbaNinja.",
+      "url": "https://docs.abaninja.ch/",
+      "code_url": null,
       "sources": [
-        "https://www.opensource.admin.ch/en/softwares/6lv7ss/",
-        "https://github.com/swiss/swiss-federal-writing-guidelines"
+        "https://docs.abaninja.ch/"
       ],
-      "limitations_fr": "Conventions institutionnelles : elles ne remplacent pas le ton d'une conversation professionnelle.",
+      "limitations_fr": "Accès lié à AbaNinja et à la disponibilité des fonctions.",
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "ofrom",
-      "name": "OFROM — français parlé en Suisse romande",
-      "kind": "corpus",
+      "id": "alpencompute",
+      "name": "AlpenCompute — SwissGPU",
+      "kind": "service",
       "topics": [
-        "langues",
-        "fr-ch",
-        "recherche"
+        "cloud",
+        "intelligence-artificielle",
+        "developpement"
       ],
       "swiss_relation": [
-        "institution-suisse",
-        "donnees-suisses"
+        "organisation-suisse",
+        "infrastructure-suisse"
       ],
-      "summary_fr": "Corpus universitaire de français oral romand, avec enregistrements et transcriptions.",
-      "url": "https://ofrom.unine.ch/",
+      "summary_fr": "Exécution de programmes Python sur GPU et CPU situés en Suisse.",
+      "url": "https://alpencompute.ch/",
       "code_url": null,
       "sources": [
-        "https://ofrom.unine.ch/",
-        "https://ofrom.unine.ch/index.php?page=citations"
+        "https://alpencompute.ch/"
       ],
-      "limitations_fr": "Données sous CC BY-NC-SA 4.0 : l'usage commercial nécessite un examen des droits.",
+      "limitations_fr": "Conditions de service et de traitement de données à vérifier chez l'éditeur.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "amtsblatt-mcp",
+      "name": "amtsblatt-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Interroger les avis publics et marchés publiés dans la FOSC et les feuilles officielles cantonales.",
+      "url": "https://github.com/malkreide/amtsblatt-mcp",
+      "code_url": "https://github.com/malkreide/amtsblatt-mcp",
+      "sources": [
+        "https://github.com/malkreide/amtsblatt-mcp",
+        "https://www.amtsblattportal.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/amtsblatt-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -93,24 +115,796 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "swiss-ai-projects",
-      "name": "Swiss AI Initiative — projets",
+      "id": "bag-epl-mcp",
+      "name": "bag-epl-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "sante",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Interroger les listes de spécialités, médicaments et données de remboursement de l'OFSP.",
+      "url": "https://github.com/malkreide/bag-epl-mcp",
+      "code_url": "https://github.com/malkreide/bag-epl-mcp",
+      "sources": [
+        "https://github.com/malkreide/bag-epl-mcp",
+        "https://www.spezialitaetenliste.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/bag-epl-mcp/tree/main/docs/audit"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bag-health-mcp",
+      "name": "bag-health-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "sante",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter des indicateurs de santé publique suisses publiés par l'OFSP.",
+      "url": "https://github.com/malkreide/bag-health-mcp",
+      "code_url": "https://github.com/malkreide/bag-health-mcp",
+      "sources": [
+        "https://github.com/malkreide/bag-health-mcp",
+        "https://www.bag.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/bag-health-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bakom-mcp",
+      "name": "bakom-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "culture",
+        "medias"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter des données ouvertes suisses sur les télécommunications et les médias.",
+      "url": "https://github.com/malkreide/bakom-mcp",
+      "code_url": "https://github.com/malkreide/bakom-mcp",
+      "sources": [
+        "https://github.com/malkreide/bakom-mcp",
+        "https://www.bakom.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/bakom-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "kanton-basel-github",
+      "name": "Bâle-Ville — dépôts GitHub",
       "kind": "catalogue",
       "topics": [
-        "intelligence-artificielle",
-        "recherche",
-        "innovation"
+        "open-source",
+        "administration",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Organisation cantonale regroupant logiciels et interfaces ouverts de Bâle-Ville.",
+      "url": "https://github.com/kanton-basel-stadt",
+      "code_url": null,
+      "sources": [
+        "https://github.com/kanton-basel-stadt"
+      ],
+      "limitations_fr": "Licences et maintenance propres à chaque dépôt.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "snb-data",
+      "name": "Banque nationale suisse — API",
+      "kind": "api",
+      "topics": [
+        "finance",
+        "statistiques",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST des tableaux et graphiques du portail de données de la BNS, en CSV/JSON.",
+      "url": "https://data.snb.ch/en/help_api",
+      "code_url": null,
+      "sources": [
+        "https://data.snb.ch/en/help_api"
+      ],
+      "limitations_fr": "Respecter les recommandations de rafraîchissement (lastUpdate, ETag) du fournisseur.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bexio-api",
+      "name": "bexio API",
+      "kind": "api",
+      "topics": [
+        "comptabilite",
+        "entreprise",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Interface REST documentée pour automatiser les données et documents de bexio.",
+      "url": "https://docs.bexio.com/",
+      "code_url": null,
+      "sources": [
+        "https://docs.bexio.com/"
+      ],
+      "limitations_fr": "Authentification et abonnement applicables.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "oss-directory-bfh",
+      "name": "BFH — OSS Directory",
+      "kind": "catalogue",
+      "topics": [
+        "open-source",
+        "developpement",
+        "recherche"
       ],
       "swiss_relation": [
         "institution-suisse"
       ],
-      "summary_fr": "Sélection de projets de recherche suisses en intelligence artificielle.",
-      "url": "https://www.swiss-ai.org/swiss-ai-projects",
+      "summary_fr": "Annuaire de logiciels et fournisseurs de services open source en Suisse.",
+      "url": "https://www.bfh.ch/de/forschung/forschungsbereiche/digital-sustainability-lab/oss-directory/",
       "code_url": null,
       "sources": [
-        "https://www.swiss-ai.org/swiss-ai-projects"
+        "https://www.bfh.ch/de/forschung/forschungsbereiche/digital-sustainability-lab/oss-directory/"
       ],
-      "limitations_fr": "Sélection de projets, non catalogue exhaustif de tous les acteurs de l'IA.",
+      "limitations_fr": "Répertoire institutionnel, non certification des sociétés répertoriées.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bootstrap-switzerland",
+      "name": "Bootstrap Switzerland",
+      "kind": "bibliotheque",
+      "topics": [
+        "design",
+        "open-source",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Thème Bootstrap adapté au design de la Confédération suisse.",
+      "url": "https://github.com/swiss/bootstrap-switzerland",
+      "code_url": "https://github.com/swiss/bootstrap-switzerland",
+      "sources": [
+        "https://www.opensource.admin.ch/fr/softwares/ywckzw/"
+      ],
+      "limitations_fr": "Projet indiqué en développement dans le catalogue officiel.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "kanton-bern-github",
+      "name": "Canton de Berne — dépôts GitHub",
+      "kind": "catalogue",
+      "topics": [
+        "open-source",
+        "administration",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Organisation GitHub cantonale publiant outils et logiciels ouverts bernois.",
+      "url": "https://github.com/kanton-bern",
+      "code_url": null,
+      "sources": [
+        "https://github.com/kanton-bern"
+      ],
+      "limitations_fr": "Licences et maintenance propres à chaque dépôt.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "oss-confederation",
+      "name": "Catalogue OSS de la Confédération",
+      "kind": "catalogue",
+      "topics": [
+        "open-source",
+        "administration",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Index public de logiciels publiés en code ouvert par les administrations suisses.",
+      "url": "https://www.opensource.admin.ch/fr/",
+      "code_url": null,
+      "sources": [
+        "https://www.opensource.admin.ch/fr/"
+      ],
+      "limitations_fr": "La couverture dépend des organismes et des logiciels publiés dans le catalogue.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "sbb-opendata",
+      "name": "CFF — Open Data",
+      "kind": "catalogue",
+      "topics": [
+        "transport",
+        "mobilite",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Portail de jeux de données publiques ferroviaires des CFF.",
+      "url": "https://data.sbb.ch/",
+      "code_url": null,
+      "sources": [
+        "https://data.sbb.ch/"
+      ],
+      "limitations_fr": "Données ouvertes, avec licences spécifiques à chaque jeu.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "sbb-developer",
+      "name": "CFF — SBB Developer Portal",
+      "kind": "catalogue",
+      "topics": [
+        "transport",
+        "mobilite",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Portail des interfaces et documents techniques des CFF.",
+      "url": "https://developer.sbb.ch/apis?category=customer_information",
+      "code_url": null,
+      "sources": [
+        "https://developer.sbb.ch/apis?category=customer_information"
+      ],
+      "limitations_fr": "Certaines APIs CFF sont réservées aux partenaires et équipes internes.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "fhir-ch-core",
+      "name": "CH Core FHIR",
+      "kind": "norme",
+      "topics": [
+        "sante",
+        "interop",
+        "medecine"
+      ],
+      "swiss_relation": [
+        "norme-suisse",
+        "institution-suisse"
+      ],
+      "summary_fr": "Guide de profils FHIR adaptés à l'interopérabilité et aux données de santé suisses.",
+      "url": "https://fhir.ch/ig/ch-core",
+      "code_url": null,
+      "sources": [
+        "https://fhir.ch/ig/ch-core"
+      ],
+      "limitations_fr": "Utiliser une version publiée stable et contrôler les licences des terminologies.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-sri-ckan-ext",
+      "name": "ckanext-switzerland",
+      "kind": "bibliotheque",
+      "topics": [
+        "open-source",
+        "donnees-ouvertes",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Extension CKAN adaptée au profil de métadonnées suisses DCAT-AP.",
+      "url": "https://github.com/opendata-swiss/ckanext-switzerland-ng",
+      "code_url": "https://github.com/opendata-swiss/ckanext-switzerland-ng",
+      "sources": [
+        "https://github.com/opendata-swiss/ckanext-switzerland-ng"
+      ],
+      "limitations_fr": "Code ouvert ; nécessite une infrastructure CKAN compatible.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "cloudscale",
+      "name": "cloudscale.ch",
+      "kind": "infrastructure",
+      "topics": [
+        "cloud",
+        "infrastructure",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Serveurs, réseaux et stockage cloud suisses pilotables via une API et outils d'infrastructure.",
+      "url": "https://www.cloudscale.ch/",
+      "code_url": null,
+      "sources": [
+        "https://www.cloudscale.ch/"
+      ],
+      "limitations_fr": "Offre commerciale ; vérification de la zone et de la configuration à l'usage.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "cmc-corpora",
+      "name": "CMC Corpora Switzerland",
+      "kind": "catalogue",
+      "topics": [
+        "langues",
+        "recherche",
+        "corpus"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Répertoire suisse de corpus de communications numériques et messages.",
+      "url": "https://cmc-corpora.ch/",
+      "code_url": null,
+      "sources": [
+        "https://cmc-corpora.ch/"
+      ],
+      "limitations_fr": "Des restrictions de réutilisation et de données personnelles s'appliquent.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "cscs-alps",
+      "name": "CSCS Alps",
+      "kind": "infrastructure",
+      "topics": [
+        "infrastructure",
+        "recherche",
+        "intelligence-artificielle"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Infrastructure nationale de supercalcul et d'entraînement de modèles pour la recherche suisse.",
+      "url": "https://docs.cscs.ch/alps/",
+      "code_url": null,
+      "sources": [
+        "https://docs.cscs.ch/alps/"
+      ],
+      "limitations_fr": "Accès lié à des allocations et partenariats scientifiques.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "cscs-inference",
+      "name": "CSCS LLM Inference API",
+      "kind": "api",
+      "topics": [
+        "intelligence-artificielle",
+        "recherche",
+        "llm"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "API compatible avec les formats courants pour inférer des modèles ouverts, dont Apertus.",
+      "url": "https://docs.cscs.ch/services/inference/api",
+      "code_url": null,
+      "sources": [
+        "https://docs.cscs.ch/services/inference/api"
+      ],
+      "limitations_fr": "Service pour la communauté académique éligible ; pas un cloud public universel.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "dasch-api",
+      "name": "DaSCH — DSP API",
+      "kind": "api",
+      "topics": [
+        "recherche",
+        "culture",
+        "api"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "API de dépôt et consultation de données de recherche en sciences humaines conservées en Suisse.",
+      "url": "https://docs.dasch.swiss/",
+      "code_url": null,
+      "sources": [
+        "https://docs.dasch.swiss/",
+        "https://dasch.swiss/"
+      ],
+      "limitations_fr": "Dépôt et réutilisation soumis aux contrats, formats et droits des jeux.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "datatrans-twint",
+      "name": "Datatrans — intégration TWINT",
+      "kind": "api",
+      "topics": [
+        "paiements",
+        "ecommerce",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "norme-suisse"
+      ],
+      "summary_fr": "Documentation d'intégration des paiements TWINT via Datatrans.",
+      "url": "https://docs.datatrans.ch/v1.0.1/docs/twint",
+      "code_url": null,
+      "sources": [
+        "https://docs.datatrans.ch/v1.0.1/docs/twint"
+      ],
+      "limitations_fr": "Contrat de paiement et intégration fournisseur nécessaires.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "designsystem-swiss",
+      "name": "Design System de la Confédération",
+      "kind": "bibliotheque",
+      "topics": [
+        "design",
+        "open-source",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Composants et ressources d'interface des sites de l'administration suisse.",
+      "url": "https://github.com/swiss/designsystem",
+      "code_url": "https://github.com/swiss/designsystem",
+      "sources": [
+        "https://www.opensource.admin.ch/fr/softwares/2odubf/"
+      ],
+      "limitations_fr": "Usage, licences et compatibilité à examiner pour chaque composant.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "energy-dashboard-api",
+      "name": "Energy Dashboard Public API",
+      "kind": "api",
+      "topics": [
+        "energie",
+        "statistiques",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST fédérale pour les indicateurs et séries temporelles de l'énergie en Suisse.",
+      "url": "https://energydashboard.admin.ch/api/swagger-ui/index.html",
+      "code_url": null,
+      "sources": [
+        "https://energydashboard.admin.ch/api/swagger-ui/index.html"
+      ],
+      "limitations_fr": "Disponibilité et séries dépendent des jeux et de leur fréquence de mise à jour.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "eth-library-api",
+      "name": "ETH Library — API Platform",
+      "kind": "catalogue",
+      "topics": [
+        "recherche",
+        "culture",
+        "api"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Portail de données bibliographiques et patrimoniales et APIs de la bibliothèque de l'ETH.",
+      "url": "https://developer.library.ethz.ch/apis",
+      "code_url": null,
+      "sources": [
+        "https://developer.library.ethz.ch/apis",
+        "https://library.ethz.ch/en/collections-and-archives/open-data/api-platform.html"
+      ],
+      "limitations_fr": "Clé gratuite requise pour certains accès ; droits selon collections.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "eth-library-mcp",
+      "name": "eth-library-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "education",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accéder à la recherche bibliographique et aux métadonnées de la bibliothèque de l'ETH.",
+      "url": "https://github.com/malkreide/eth-library-mcp",
+      "code_url": "https://github.com/malkreide/eth-library-mcp",
+      "sources": [
+        "https://github.com/malkreide/eth-library-mcp",
+        "https://library.ethz.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/eth-library-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "exoscale",
+      "name": "Exoscale",
+      "kind": "infrastructure",
+      "topics": [
+        "cloud",
+        "infrastructure",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Infrastructure cloud suisse proposant des régions et services de déploiement.",
+      "url": "https://www.exoscale.com/lp/swiss-cloud-hosting",
+      "code_url": null,
+      "sources": [
+        "https://www.exoscale.com/lp/swiss-cloud-hosting"
+      ],
+      "limitations_fr": "Le fournisseur propose plusieurs régions ; sélectionner la région suisse explicitement.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "fedlex",
+      "name": "Fedlex — droit fédéral",
+      "kind": "donnees",
+      "topics": [
+        "droit",
+        "administration",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Portail officiel du droit fédéral, des recueils et publications juridiques.",
+      "url": "https://www.fedlex.admin.ch/",
+      "code_url": null,
+      "sources": [
+        "https://www.fedlex.admin.ch/",
+        "https://github.com/malkreide/fedlex-mcp"
+      ],
+      "limitations_fr": "La présentation et les interfaces techniques varient selon le corpus juridique.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "fedlex-sparql",
+      "name": "Fedlex — SPARQL fédéral",
+      "kind": "api",
+      "topics": [
+        "droit",
+        "administration",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Point SPARQL pour interroger les informations et publications du droit fédéral suisse.",
+      "url": "https://fedlex.data.admin.ch/sparql",
+      "code_url": null,
+      "sources": [
+        "https://fedlex.data.admin.ch/sparql"
+      ],
+      "limitations_fr": "Références légales et versions des textes à vérifier contre les publications officielles.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "fedlex-mcp",
+      "name": "fedlex-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour consulter le droit fédéral et des sources juridiques suisses.",
+      "url": "https://github.com/malkreide/fedlex-mcp",
+      "code_url": "https://github.com/malkreide/fedlex-mcp",
+      "sources": [
+        "https://github.com/malkreide/fedlex-mcp",
+        "https://www.fedlex.admin.ch/"
+      ],
+      "limitations_fr": "Client tiers, non source juridique officielle en lui-même.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "geoadmin-3dtiles",
+      "name": "geo.admin.ch — 3D tiles",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "design",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Données cartographiques 3D sous forme de tuiles compatibles Cesium.",
+      "url": "https://docs.geo.admin.ch/visualize-data/3d-tiles.html",
+      "code_url": null,
+      "sources": [
+        "https://docs.geo.admin.ch/visualize-data/3d-tiles.html"
+      ],
+      "limitations_fr": "Droits liés aux jeux de données et capacités client.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "geoadmin",
+      "name": "geo.admin.ch — APIs géographiques",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "donnees-ouvertes",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Cartes et géodonnées officielles intégrables dans des applications.",
+      "url": "https://www.geo.admin.ch/fr/interface-de-programmation-api",
+      "code_url": null,
+      "sources": [
+        "https://www.geo.admin.ch/fr/interface-de-programmation-api",
+        "https://www.opensource.admin.ch/fr/softwares/a0306q/"
+      ],
+      "limitations_fr": "Droits de réutilisation et actualité variables selon les couches de données.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "geoadmin-stac",
+      "name": "geo.admin.ch — STAC API",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "donnees-ouvertes",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API normalisée de recherche et téléchargement automatisé de jeux de géodonnées fédérales.",
+      "url": "https://data.geo.admin.ch/api/stac/static/spec/v1/api.html",
+      "code_url": null,
+      "sources": [
+        "https://data.geo.admin.ch/api/stac/static/spec/v1/api.html",
+        "https://www.opensource.admin.ch/en/softwares/5owwhy/"
+      ],
+      "limitations_fr": "Les droits de réutilisation varient selon les couches, même si le service est ouvert.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "geoadmin-vectortiles",
+      "name": "geo.admin.ch — vector tiles",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "design",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Tuiles et styles de cartes vectorielles compatibles avec les clients MapLibre.",
+      "url": "https://docs.geo.admin.ch/visualize-data/vector-tiles.html",
+      "code_url": null,
+      "sources": [
+        "https://docs.geo.admin.ch/visualize-data/vector-tiles.html"
+      ],
+      "limitations_fr": "Respecter les conditions et limites du géoservice.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-linked-geodata",
+      "name": "Géodonnées liées — SPARQL",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "donnees-ouvertes",
+        "interop"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Point SPARQL officiel permettant de relier géodonnées et autres graphes de données.",
+      "url": "https://geo.ld.admin.ch/sparql/",
+      "code_url": null,
+      "sources": [
+        "https://www.geo.admin.ch/fr/service-linked-data-lier-les-geodonnees"
+      ],
+      "limitations_fr": "Couverture dépendante des jeux publiés en données liées.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "i14y",
+      "name": "I14Y — métadonnées et APIs",
+      "kind": "api",
+      "topics": [
+        "donnees-ouvertes",
+        "administration",
+        "interop"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Catalogue suisse des métadonnées, définitions, interfaces et prestations publiques.",
+      "url": "https://apiconsole.i14y.admin.ch/",
+      "code_url": null,
+      "sources": [
+        "https://www.bfs.admin.ch/fr/plateforme-interoperabilite",
+        "https://apiconsole.i14y.admin.ch/"
+      ],
+      "limitations_fr": "API publique pour consultation occasionnelle ; API partenaire avec authentification.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "i14y-mcp",
+      "name": "i14y-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "administration",
+        "interop"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour découvrir catalogues, concepts et APIs via I14Y.",
+      "url": "https://github.com/malkreide/i14y-mcp",
+      "code_url": "https://github.com/malkreide/i14y-mcp",
+      "sources": [
+        "https://github.com/malkreide/i14y-mcp",
+        "https://apiconsole.i14y.admin.ch/"
+      ],
+      "limitations_fr": "Client tiers ; certaines ressources trouvées par I14Y sont soumises à licence ou authentification.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "infinity-api-mcp",
+      "name": "Infinity — API et MCP",
+      "kind": "api",
+      "topics": [
+        "comptabilite",
+        "mcp",
+        "entreprise"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Interfaces API REST et serveur MCP pour la gestion de comptes, projets et documents.",
+      "url": "https://docs.infinity.swiss/api/introduction",
+      "code_url": null,
+      "sources": [
+        "https://docs.infinity.swiss/api/introduction"
+      ],
+      "limitations_fr": "Token et droits propres à l'organisation et à l'offre.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -158,23 +952,225 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "swissgpt",
-      "name": "SwissGPT — AlpineAI",
-      "kind": "service",
+      "id": "jeap-rag",
+      "name": "jEAP Project RAG",
+      "kind": "mcp",
       "topics": [
-        "intelligence-artificielle",
-        "entreprise"
+        "mcp",
+        "open-source",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Serveur MCP open source en Rust pour interroger la documentation et le code jEAP.",
+      "url": "https://github.com/jeap-admin-ch/jeap-project-rag",
+      "code_url": "https://github.com/jeap-admin-ch/jeap-project-rag",
+      "sources": [
+        "https://github.com/jeap-admin-ch/jeap-project-rag",
+        "https://www.opensource.admin.ch/"
+      ],
+      "limitations_fr": "Projet officiel ; démonstration d'architecture RAG appliquée au code.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "klara-api",
+      "name": "KLARA API",
+      "kind": "api",
+      "topics": [
+        "comptabilite",
+        "entreprise",
+        "api"
       ],
       "swiss_relation": [
         "organisation-suisse"
       ],
-      "summary_fr": "Service d'IA pour entreprises proposé par la société suisse AlpineAI.",
-      "url": "https://alpineai.swiss/",
+      "summary_fr": "API OpenAPI 3 permettant d'interconnecter l'écosystème KLARA avec des applications externes.",
+      "url": "https://developer.klara.ch/",
       "code_url": null,
       "sources": [
-        "https://alpineai.swiss/en/medien/"
+        "https://developer.klara.ch/",
+        "https://www.klara.ch/en/api"
       ],
-      "limitations_fr": "Vérifier directement l'offre, l'hébergement et les fonctionnalités actuelles avant une intégration.",
+      "limitations_fr": "Accès soumis aux comptes et modalités de KLARA.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swisspost-api-address-validation",
+      "name": "La Poste — Address Verification API",
+      "kind": "api",
+      "topics": [
+        "adresses",
+        "logistique",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API de vérification et suggestion des adresses suisses pour formulaires et commerces.",
+      "url": "https://developer.apis.post.ch/ui/apis/44eb4da2-5443-40f2-ab4d-a25443b0f28c",
+      "code_url": null,
+      "sources": [
+        "https://developer.apis.post.ch/ui/apis/44eb4da2-5443-40f2-ab4d-a25443b0f28c"
+      ],
+      "limitations_fr": "Accès par compte API Post ; vérifier les droits et plans.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "post-digital-commerce",
+      "name": "La Poste — Digital Commerce API",
+      "kind": "api",
+      "topics": [
+        "logistique",
+        "ecommerce",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "API REST de services pour la livraison et les opérations de commerce numérique de La Poste.",
+      "url": "https://developer.post.ch/en/digital-commerce-api",
+      "code_url": null,
+      "sources": [
+        "https://developer.post.ch/en/digital-commerce-api"
+      ],
+      "limitations_fr": "Conditions propres aux applications et offres de La Poste.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "post-address-api",
+      "name": "La Poste suisse — Address Web Services",
+      "kind": "api",
+      "topics": [
+        "adresses",
+        "entreprise",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST de vérification, standardisation et maintenance d'adresses postales suisses.",
+      "url": "https://developer.post.ch/en/address-web-services-rest",
+      "code_url": null,
+      "sources": [
+        "https://developer.post.ch/en/address-web-services-rest"
+      ],
+      "limitations_fr": "L'utilisation peut nécessiter un contrat et des identifiants.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "post-api-catalog",
+      "name": "La Poste suisse — API Developer Portal",
+      "kind": "catalogue",
+      "topics": [
+        "logistique",
+        "adresses",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Portail de découverte et d'intégration des API logistiques, colis et adresses de La Poste.",
+      "url": "https://developer.apis.post.ch/ui/apis",
+      "code_url": null,
+      "sources": [
+        "https://developer.apis.post.ch/ui/apis",
+        "https://developer.post.ch/en/api-and-documentation"
+      ],
+      "limitations_fr": "Nombre de ressources et modalités d'accès variables selon le service.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "lindas-data",
+      "name": "LINDAS — Linked Data Suisse",
+      "kind": "api",
+      "topics": [
+        "donnees-ouvertes",
+        "interop",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Infrastructure fédérale de graphes et requêtes SPARQL pour des données publiques liées.",
+      "url": "https://lindas.admin.ch/ecosystem/LINDAS-ecosystem",
+      "code_url": null,
+      "sources": [
+        "https://lindas.admin.ch/ecosystem/LINDAS-ecosystem"
+      ],
+      "limitations_fr": "Disponibilité et licence dépendent de chaque graphe publié.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "lindas-mcp",
+      "name": "lindas-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "donnees-ouvertes",
+        "interop"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Interroger les graphes de données fédérales liées via l'infrastructure SPARQL LINDAS.",
+      "url": "https://github.com/malkreide/lindas-mcp",
+      "code_url": "https://github.com/malkreide/lindas-mcp",
+      "sources": [
+        "https://github.com/malkreide/lindas-mcp",
+        "https://lindas.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/lindas-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "liri-lcp",
+      "name": "LiRI Corpus Platform",
+      "kind": "service",
+      "topics": [
+        "langues",
+        "recherche",
+        "corpus"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Plateforme universitaire zurichoise d'analyse de corpus avec consultation web et interface technique.",
+      "url": "https://lcp.linguistik.uzh.ch/",
+      "code_url": null,
+      "sources": [
+        "https://lcp.linguistik.uzh.ch/"
+      ],
+      "limitations_fr": "Accès, licences et disponibilité selon chaque corpus.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "lobbywatch-mcp",
+      "name": "lobbywatch-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "administration",
+        "democratie"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les informations de transparence publiées sur les intérêts et liens parlementaires.",
+      "url": "https://github.com/malkreide/lobbywatch-mcp",
+      "code_url": "https://github.com/malkreide/lobbywatch-mcp",
+      "sources": [
+        "https://github.com/malkreide/lobbywatch-mcp",
+        "https://lobbywatch.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/lobbywatch-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -198,222 +1194,24 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "oss-confederation",
-      "name": "Catalogue OSS de la Confédération",
-      "kind": "catalogue",
+      "id": "mcp-swiss",
+      "name": "mcp-swiss — Swiss Open Data",
+      "kind": "mcp",
       "topics": [
-        "open-source",
-        "administration",
-        "developpement"
-      ],
-      "swiss_relation": [
-        "administration-suisse"
-      ],
-      "summary_fr": "Index public de logiciels publiés en code ouvert par les administrations suisses.",
-      "url": "https://www.opensource.admin.ch/fr/",
-      "code_url": null,
-      "sources": [
-        "https://www.opensource.admin.ch/fr/"
-      ],
-      "limitations_fr": "La couverture dépend des organismes et des logiciels publiés dans le catalogue.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "designsystem-swiss",
-      "name": "Design System de la Confédération",
-      "kind": "bibliotheque",
-      "topics": [
-        "design",
-        "open-source",
-        "developpement"
-      ],
-      "swiss_relation": [
-        "administration-suisse"
-      ],
-      "summary_fr": "Composants et ressources d'interface des sites de l'administration suisse.",
-      "url": "https://github.com/swiss/designsystem",
-      "code_url": "https://github.com/swiss/designsystem",
-      "sources": [
-        "https://www.opensource.admin.ch/fr/softwares/2odubf/"
-      ],
-      "limitations_fr": "Usage, licences et compatibilité à examiner pour chaque composant.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "bootstrap-switzerland",
-      "name": "Bootstrap Switzerland",
-      "kind": "bibliotheque",
-      "topics": [
-        "design",
-        "open-source",
-        "developpement"
-      ],
-      "swiss_relation": [
-        "administration-suisse"
-      ],
-      "summary_fr": "Thème Bootstrap adapté au design de la Confédération suisse.",
-      "url": "https://github.com/swiss/bootstrap-switzerland",
-      "code_url": "https://github.com/swiss/bootstrap-switzerland",
-      "sources": [
-        "https://www.opensource.admin.ch/fr/softwares/ywckzw/"
-      ],
-      "limitations_fr": "Projet indiqué en développement dans le catalogue officiel.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "opendata-swiss",
-      "name": "opendata.swiss — API CKAN",
-      "kind": "api",
-      "topics": [
+        "mcp",
         "donnees-ouvertes",
-        "administration",
-        "recherche"
+        "transport"
       ],
       "swiss_relation": [
-        "administration-suisse",
         "donnees-suisses"
       ],
-      "summary_fr": "Catalogue national des jeux de données publiques avec API de métadonnées CKAN.",
-      "url": "https://handbook.opendata.swiss/fr/content/nutzen/api-nutzen.html",
+      "summary_fr": "Serveur MCP communautaire réunissant transport, météo, géographie et entreprises suisses.",
+      "url": "https://github.com/vikramgorla/mcp-swiss",
       "code_url": null,
       "sources": [
-        "https://handbook.opendata.swiss/fr/content/nutzen/api-nutzen.html"
+        "https://github.com/vikramgorla/mcp-swiss"
       ],
-      "limitations_fr": "La licence et les conditions de chaque jeu de données sont indépendantes du catalogue.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "i14y",
-      "name": "I14Y — métadonnées et APIs",
-      "kind": "api",
-      "topics": [
-        "donnees-ouvertes",
-        "administration",
-        "interop"
-      ],
-      "swiss_relation": [
-        "administration-suisse"
-      ],
-      "summary_fr": "Catalogue suisse des métadonnées, définitions, interfaces et prestations publiques.",
-      "url": "https://apiconsole.i14y.admin.ch/",
-      "code_url": null,
-      "sources": [
-        "https://www.bfs.admin.ch/fr/plateforme-interoperabilite",
-        "https://apiconsole.i14y.admin.ch/"
-      ],
-      "limitations_fr": "API publique pour consultation occasionnelle ; API partenaire avec authentification.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "zefix",
-      "name": "Zefix — registre du commerce",
-      "kind": "api",
-      "topics": [
-        "entreprise",
-        "administration",
-        "donnees-ouvertes"
-      ],
-      "swiss_relation": [
-        "administration-suisse",
-        "donnees-suisses"
-      ],
-      "summary_fr": "Recherche d'entreprises inscrites au registre du commerce et API REST de l'Office fédéral de la justice.",
-      "url": "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix",
-      "code_url": null,
-      "sources": [
-        "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix"
-      ],
-      "limitations_fr": "API REST : modalités et accès à demander ; pas d'export intégral libre du registre.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "fedlex",
-      "name": "Fedlex — droit fédéral",
-      "kind": "donnees",
-      "topics": [
-        "droit",
-        "administration",
-        "recherche"
-      ],
-      "swiss_relation": [
-        "administration-suisse",
-        "donnees-suisses"
-      ],
-      "summary_fr": "Portail officiel du droit fédéral, des recueils et publications juridiques.",
-      "url": "https://www.fedlex.admin.ch/",
-      "code_url": null,
-      "sources": [
-        "https://www.fedlex.admin.ch/",
-        "https://github.com/malkreide/fedlex-mcp"
-      ],
-      "limitations_fr": "La présentation et les interfaces techniques varient selon le corpus juridique.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "geoadmin",
-      "name": "geo.admin.ch — APIs géographiques",
-      "kind": "api",
-      "topics": [
-        "geographie",
-        "donnees-ouvertes",
-        "developpement"
-      ],
-      "swiss_relation": [
-        "administration-suisse",
-        "donnees-suisses"
-      ],
-      "summary_fr": "Cartes et géodonnées officielles intégrables dans des applications.",
-      "url": "https://www.geo.admin.ch/fr/interface-de-programmation-api",
-      "code_url": null,
-      "sources": [
-        "https://www.geo.admin.ch/fr/interface-de-programmation-api",
-        "https://www.opensource.admin.ch/fr/softwares/a0306q/"
-      ],
-      "limitations_fr": "Droits de réutilisation et actualité variables selon les couches de données.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "ofs-statistics",
-      "name": "OFS — APIs statistiques",
-      "kind": "api",
-      "topics": [
-        "statistiques",
-        "donnees-ouvertes",
-        "recherche"
-      ],
-      "swiss_relation": [
-        "administration-suisse",
-        "donnees-suisses"
-      ],
-      "summary_fr": "Accès programmable aux statistiques suisses via PxWeb, SDMX et autres APIs officielles.",
-      "url": "https://statistik.admin.ch/fr/donnees/api",
-      "code_url": null,
-      "sources": [
-        "https://statistik.admin.ch/fr/donnees/api"
-      ],
-      "limitations_fr": "Plusieurs APIs distinctes ; consulter la documentation du jeu de données visé.",
-      "reviewed_at": "2026-11-16"
-    },
-    {
-      "id": "snb-data",
-      "name": "Banque nationale suisse — API",
-      "kind": "api",
-      "topics": [
-        "finance",
-        "statistiques",
-        "donnees-ouvertes"
-      ],
-      "swiss_relation": [
-        "institution-suisse",
-        "donnees-suisses"
-      ],
-      "summary_fr": "API REST des tableaux et graphiques du portail de données de la BNS, en CSV/JSON.",
-      "url": "https://data.snb.ch/en/help_api",
-      "code_url": null,
-      "sources": [
-        "https://data.snb.ch/en/help_api"
-      ],
-      "limitations_fr": "Respecter les recommandations de rafraîchissement (lastUpdate, ETag) du fournisseur.",
+      "limitations_fr": "Projet tiers non officiel ; vérifier les sources amont et les mises à jour.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -440,46 +1238,496 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "swiss-linked-geodata",
-      "name": "Géodonnées liées — SPARQL",
+      "id": "meteoswiss-mcp",
+      "name": "meteoswiss-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "environnement",
+        "climat"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accéder aux données météorologiques, normes climatiques et alertes de MétéoSuisse.",
+      "url": "https://github.com/malkreide/meteoswiss-mcp",
+      "code_url": "https://github.com/malkreide/meteoswiss-mcp",
+      "sources": [
+        "https://github.com/malkreide/meteoswiss-mcp",
+        "https://opendatadocs.meteoswiss.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/meteoswiss-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "news-monitor-mcp",
+      "name": "news-monitor-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "culture",
+        "medias"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer des actualités et flux RSS de médias publics suisses.",
+      "url": "https://github.com/malkreide/news-monitor-mcp",
+      "code_url": "https://github.com/malkreide/news-monitor-mcp",
+      "sources": [
+        "https://github.com/malkreide/news-monitor-mcp",
+        "https://www.srf.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/news-monitor-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "nine-swiss-ai",
+      "name": "Nine — Swiss AI Infrastructure",
+      "kind": "infrastructure",
+      "topics": [
+        "cloud",
+        "infrastructure",
+        "intelligence-artificielle"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Infrastructure GPU et hébergement IA sur du matériel exploité en Suisse.",
+      "url": "https://nine.ch/en/swiss-ai-infrastructure",
+      "code_url": null,
+      "sources": [
+        "https://nine.ch/en/swiss-ai-infrastructure"
+      ],
+      "limitations_fr": "Offre commerciale ; disponibilité GPU et déploiement à examiner.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "numezis-api",
+      "name": "Numezis Developers — API et MCP",
       "kind": "api",
       "topics": [
-        "geographie",
-        "donnees-ouvertes",
-        "interop"
+        "comptabilite",
+        "mcp",
+        "entreprise"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "API REST, webhooks signés et accès MCP annoncés pour une plateforme comptable suisse.",
+      "url": "https://www.numezis.com/fr/platform/developers",
+      "code_url": null,
+      "sources": [
+        "https://www.numezis.com/fr/platform/developers"
+      ],
+      "limitations_fr": "Offre propriétaire ; serveur MCP et conditions d'activation à vérifier.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bafu-graphql",
+      "name": "OFEV — plateforme de données GraphQL",
+      "kind": "api",
+      "topics": [
+        "environnement",
+        "climat",
+        "api"
       ],
       "swiss_relation": [
         "administration-suisse",
         "donnees-suisses"
       ],
-      "summary_fr": "Point SPARQL officiel permettant de relier géodonnées et autres graphes de données.",
-      "url": "https://geo.ld.admin.ch/sparql/",
+      "summary_fr": "API GraphQL donnant accès à la plateforme des données environnementales fédérales.",
+      "url": "https://data.bafu.admin.ch/en",
       "code_url": null,
       "sources": [
-        "https://www.geo.admin.ch/fr/service-linked-data-lier-les-geodonnees"
+        "https://data.bafu.admin.ch/en"
       ],
-      "limitations_fr": "Couverture dépendante des jeux publiés en données liées.",
+      "limitations_fr": "Conditions et licence propres aux jeux de données.",
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "swissdec-elm",
-      "name": "Swissdec ELM — norme salaire",
-      "kind": "norme",
+      "id": "ofrom",
+      "name": "OFROM — français parlé en Suisse romande",
+      "kind": "corpus",
       "topics": [
-        "salaires",
-        "entreprise",
-        "interop"
+        "langues",
+        "fr-ch",
+        "recherche"
       ],
       "swiss_relation": [
-        "norme-suisse"
+        "institution-suisse",
+        "donnees-suisses"
       ],
-      "summary_fr": "Norme suisse de déclaration et transmission des données salariales (ELM).",
-      "url": "https://www.swissdec.ch/fr/elm",
+      "summary_fr": "Corpus universitaire de français oral romand, avec enregistrements et transcriptions.",
+      "url": "https://ofrom.unine.ch/",
       "code_url": null,
       "sources": [
-        "https://www.swissdec.ch/fr/elm"
+        "https://ofrom.unine.ch/",
+        "https://ofrom.unine.ch/index.php?page=citations"
       ],
-      "limitations_fr": "Une norme n'est pas une API publique universelle ; versions et certification doivent être vérifiées.",
+      "limitations_fr": "Données sous CC BY-NC-SA 4.0 : l'usage commercial nécessite un examen des droits.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "ofs-statistics",
+      "name": "OFS — APIs statistiques",
+      "kind": "api",
+      "topics": [
+        "statistiques",
+        "donnees-ouvertes",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accès programmable aux statistiques suisses via PxWeb, SDMX et autres APIs officielles.",
+      "url": "https://statistik.admin.ch/fr/donnees/api",
+      "code_url": null,
+      "sources": [
+        "https://statistik.admin.ch/fr/donnees/api"
+      ],
+      "limitations_fr": "Plusieurs APIs distinctes ; consulter la documentation du jeu de données visé.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "bag-idd-api",
+      "name": "OFSP — Infectious Diseases API",
+      "kind": "api",
+      "topics": [
+        "sante",
+        "statistiques",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST officielle de surveillance des maladies transmissibles en Suisse.",
+      "url": "https://api.idd.bag.admin.ch/swagger-ui/api-doc.html",
+      "code_url": null,
+      "sources": [
+        "https://api.idd.bag.admin.ch/swagger-ui/api-doc.html",
+        "https://www.idd.bag.admin.ch/portal-data"
+      ],
+      "limitations_fr": "Certaines fonctions sont annoncées beta ou en cours de développement.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-specialties-list",
+      "name": "OFSP — Liste des spécialités",
+      "kind": "donnees",
+      "topics": [
+        "sante",
+        "medecine",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Données et archives des médicaments remboursés publiées dans la liste fédérale des spécialités.",
+      "url": "https://sl.bag.admin.ch/resources/current-and-archived-data",
+      "code_url": null,
+      "sources": [
+        "https://sl.bag.admin.ch/resources/current-and-archived-data"
+      ],
+      "limitations_fr": "Les conditions de diffusion et la fréquence de renouvellement sont propres aux données.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "ojp-swiss",
+      "name": "Open Journey Planner Suisse (OJP)",
+      "kind": "api",
+      "topics": [
+        "transport",
+        "mobilite",
+        "api"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API de planification multimodale suisse basée sur le standard OJP.",
+      "url": "https://opentransportdata.swiss/en/cookbook/open-journey-planner-ojp",
+      "code_url": null,
+      "sources": [
+        "https://opentransportdata.swiss/en/cookbook/open-journey-planner-ojp"
+      ],
+      "limitations_fr": "Inscription et clé éventuellement requises pour les endpoints.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "opencaselaw",
+      "name": "OpenCaseLaw — droit suisse",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Corpus et moteur de recherche juridique suisse avec API REST et MCP communautaires.",
+      "url": "https://github.com/jonashertner/opencaselaw",
+      "code_url": null,
+      "sources": [
+        "https://github.com/jonashertner/opencaselaw"
+      ],
+      "limitations_fr": "Service tiers non juridictionnel ; vérifier la fraîcheur des décisions sur les sources officielles.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "opendata-swiss",
+      "name": "opendata.swiss — API CKAN",
+      "kind": "api",
+      "topics": [
+        "donnees-ouvertes",
+        "administration",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Catalogue national des jeux de données publiques avec API de métadonnées CKAN.",
+      "url": "https://handbook.opendata.swiss/fr/content/nutzen/api-nutzen.html",
+      "code_url": null,
+      "sources": [
+        "https://handbook.opendata.swiss/fr/content/nutzen/api-nutzen.html"
+      ],
+      "limitations_fr": "La licence et les conditions de chaque jeu de données sont indépendantes du catalogue.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "openlex-mcp",
+      "name": "openlex-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Rechercher les lois et articles du droit cantonal zurichois dans ZH-Lex.",
+      "url": "https://github.com/malkreide/openlex-mcp",
+      "code_url": "https://github.com/malkreide/openlex-mcp",
+      "sources": [
+        "https://github.com/malkreide/openlex-mcp",
+        "https://www.zh.ch/de/politik-staat/gesetze-beschluesse.html",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/openlex-mcp/tree/master/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "transport-open-data",
+      "name": "opentransportdata.swiss",
+      "kind": "catalogue",
+      "topics": [
+        "transport",
+        "mobilite",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Catalogue national de fichiers et interfaces d'information voyageurs des transports publics.",
+      "url": "https://opentransportdata.swiss/",
+      "code_url": null,
+      "sources": [
+        "https://opentransportdata.swiss/"
+      ],
+      "limitations_fr": "La fréquence de mise à jour et les conditions d'accès dépendent des jeux.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "openzh-github",
+      "name": "openZH — projets GitHub",
+      "kind": "catalogue",
+      "topics": [
+        "open-source",
+        "administration",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Dépôts publics d'outils et traitements de données ouvertes du canton de Zurich.",
+      "url": "https://github.com/openZH",
+      "code_url": null,
+      "sources": [
+        "https://github.com/openZH"
+      ],
+      "limitations_fr": "Droits sur les données distincts du code.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "parlament-mcp",
+      "name": "parlament-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "administration",
+        "democratie"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Interroger l'API OData de l'Assemblée fédérale et les objets parlementaires.",
+      "url": "https://github.com/malkreide/parlament-mcp",
+      "code_url": "https://github.com/malkreide/parlament-mcp",
+      "sources": [
+        "https://github.com/malkreide/parlament-mcp",
+        "https://www.parlament.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/parlament-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "payrexx-api",
+      "name": "Payrexx Developer API",
+      "kind": "api",
+      "topics": [
+        "paiements",
+        "ecommerce",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "API de transactions pour l'intégration d'une plateforme de paiement suisse.",
+      "url": "https://developers.payrexx.com/reference/retrieve-a-transaction",
+      "code_url": null,
+      "sources": [
+        "https://developers.payrexx.com/reference/retrieve-a-transaction"
+      ],
+      "limitations_fr": "Clés et conditions commerciales selon compte et méthodes activées.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "register-mcp",
+      "name": "register-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "entreprise",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour les données d'entreprises Zefix et les publications associées.",
+      "url": "https://github.com/malkreide/register-mcp",
+      "code_url": "https://github.com/malkreide/register-mcp",
+      "sources": [
+        "https://github.com/malkreide/register-mcp",
+        "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix"
+      ],
+      "limitations_fr": "Client tiers ; les restrictions du registre et la protection des personnes restent applicables.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "renku",
+      "name": "Renku — Swiss Data Science Center",
+      "kind": "bibliotheque",
+      "topics": [
+        "recherche",
+        "donnees-ouvertes",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Plateforme open source de recherche reproductible, données et calcul collaboratif.",
+      "url": "https://github.com/SwissDataScienceCenter/renku",
+      "code_url": null,
+      "sources": [
+        "https://github.com/SwissDataScienceCenter/renku",
+        "https://renkulab.io/"
+      ],
+      "limitations_fr": "La disponibilité de l'hébergement et des services dépend de l'offre et de la version.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "sbb-opendata-mcp",
+      "name": "sbb-opendata-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "mobilite",
+        "transport"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Interroger les données ouvertes CFF sur les gares, la fréquentation et les infrastructures.",
+      "url": "https://github.com/malkreide/sbb-opendata-mcp",
+      "code_url": "https://github.com/malkreide/sbb-opendata-mcp",
+      "sources": [
+        "https://github.com/malkreide/sbb-opendata-mcp",
+        "https://data.sbb.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/sbb-opendata-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "seco-labor-mcp",
+      "name": "seco-labor-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "finance",
+        "statistiques"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les indicateurs suisses du marché de l'emploi, du chômage et des postes vacants.",
+      "url": "https://github.com/malkreide/seco-labor-mcp",
+      "code_url": "https://github.com/malkreide/seco-labor-mcp",
+      "sources": [
+        "https://github.com/malkreide/seco-labor-mcp",
+        "https://www.amstat.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/seco-labor-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "siard-suite",
+      "name": "SIARD Suite — Archives fédérales",
+      "kind": "bibliotheque",
+      "topics": [
+        "open-source",
+        "archivage",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Outils ouverts pour conserver, parcourir et restaurer des bases relationnelles archivées.",
+      "url": "https://github.com/sfa-siard/siard-suite",
+      "code_url": "https://github.com/sfa-siard/siard-suite",
+      "sources": [
+        "https://github.com/sfa-siard/siard-suite"
+      ],
+      "limitations_fr": "Licences et compatibilité des formats à examiner.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -527,6 +1775,265 @@
       "reviewed_at": "2026-11-16"
     },
     {
+      "id": "six-api-portal",
+      "name": "SIX API Catalog",
+      "kind": "catalogue",
+      "topics": [
+        "finance",
+        "banque",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Catalogue des APIs de SIX pour les services financiers, opérations SIC et référentiels bancaires.",
+      "url": "https://apiportal.six-group.com/default",
+      "code_url": null,
+      "sources": [
+        "https://apiportal.six-group.com/default"
+      ],
+      "limitations_fr": "Certains endpoints nécessitent contrat, inscription ou accès payant.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "six-blink",
+      "name": "SIX bLink Open Banking",
+      "kind": "api",
+      "topics": [
+        "finance",
+        "banque",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "norme-suisse"
+      ],
+      "summary_fr": "Plateforme bancaire d'interopérabilité, informations de compte et initiation de paiement.",
+      "url": "https://docs.blink.six-group.com/api-reference/introduction",
+      "code_url": null,
+      "sources": [
+        "https://docs.blink.six-group.com/api-reference/introduction"
+      ],
+      "limitations_fr": "Accès de production soumis à onboarding et contrats.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "six-sic-status",
+      "name": "SIX SIC Service Status API",
+      "kind": "api",
+      "topics": [
+        "paiements",
+        "banque",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API renseignant le statut des services de paiement électronique SIC.",
+      "url": "https://apiportal.six-group.com/apis/sic-service-status-api-v1-ch-v1/docs",
+      "code_url": null,
+      "sources": [
+        "https://apiportal.six-group.com/apis/sic-service-status-api-v1-ch-v1/docs"
+      ],
+      "limitations_fr": "Accès et authentification éventuels selon le portail SIX.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "six-bank-master",
+      "name": "SIX Swiss Bank Master API",
+      "kind": "api",
+      "topics": [
+        "banque",
+        "finance",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API de référence des établissements et participants aux systèmes de paiement suisses.",
+      "url": "https://apiportal.six-group.com/apis/swiss-bank-master-api-ch-v3/docs",
+      "code_url": null,
+      "sources": [
+        "https://apiportal.six-group.com/apis/swiss-bank-master-api-ch-v3/docs"
+      ],
+      "limitations_fr": "Modalités et restrictions à vérifier au portail SIX.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "srgssr-mcp",
+      "name": "srgssr-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "culture",
+        "medias"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Interroger les sources publiques de la SSR pour des métadonnées de contenus et programmes.",
+      "url": "https://github.com/malkreide/srgssr-mcp",
+      "code_url": "https://github.com/malkreide/srgssr-mcp",
+      "sources": [
+        "https://github.com/malkreide/srgssr-mcp",
+        "https://developer.srgssr.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/srgssr-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-ai-projects",
+      "name": "Swiss AI Initiative — projets",
+      "kind": "catalogue",
+      "topics": [
+        "intelligence-artificielle",
+        "recherche",
+        "innovation"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Sélection de projets de recherche suisses en intelligence artificielle.",
+      "url": "https://www.swiss-ai.org/swiss-ai-projects",
+      "code_url": null,
+      "sources": [
+        "https://www.swiss-ai.org/swiss-ai-projects"
+      ],
+      "limitations_fr": "Sélection de projets, non catalogue exhaustif de tous les acteurs de l'IA.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-ai-llm-proxy",
+      "name": "Swiss AI llm-proxy",
+      "kind": "bibliotheque",
+      "topics": [
+        "intelligence-artificielle",
+        "developpement",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Composant open source de proxy et contrôle d'accès aux services de LLM.",
+      "url": "https://github.com/swiss-ai/llm-proxy",
+      "code_url": null,
+      "sources": [
+        "https://github.com/swiss-ai/llm-proxy"
+      ],
+      "limitations_fr": "Logiciel à déployer et configurer ; ne fournit pas de modèles à lui seul.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-ai-model-launch",
+      "name": "Swiss AI model-launch",
+      "kind": "bibliotheque",
+      "topics": [
+        "intelligence-artificielle",
+        "developpement",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Outils de déploiement et de lancement de modèles pour les infrastructures de la Swiss AI Initiative.",
+      "url": "https://github.com/swiss-ai/model-launch",
+      "code_url": null,
+      "sources": [
+        "https://github.com/swiss-ai/model-launch"
+      ],
+      "limitations_fr": "Respecter les exigences matérielles et de version des modèles.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-ai-serving-api",
+      "name": "Swiss AI serving-api",
+      "kind": "bibliotheque",
+      "topics": [
+        "intelligence-artificielle",
+        "api",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Code ouvert pour l'interface de service et l'accès aux modèles de l'initiative suisse.",
+      "url": "https://github.com/swiss-ai/serving-api",
+      "code_url": null,
+      "sources": [
+        "https://github.com/swiss-ai/serving-api"
+      ],
+      "limitations_fr": "Composant technique, pas un endpoint d'inférence utilisable directement.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "oss-catalog-source",
+      "name": "Swiss federal OSS Catalogue — source",
+      "kind": "bibliotheque",
+      "topics": [
+        "open-source",
+        "developpement",
+        "administration"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Code source public de l'outil qui indexe les logiciels ouverts de la Confédération.",
+      "url": "https://github.com/swiss/oss-catalog",
+      "code_url": "https://github.com/swiss/oss-catalog",
+      "sources": [
+        "https://github.com/swiss/oss-catalog"
+      ],
+      "limitations_fr": "Le catalogue est un service distinct des logiciels qu'il référence.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "federal-writing-guidelines",
+      "name": "Swiss Federal Writing Guidelines",
+      "kind": "ressource",
+      "topics": [
+        "langues",
+        "redaction",
+        "open-source"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Ressource libre de relecture des textes selon les conventions rédactionnelles de la Confédération.",
+      "url": "https://github.com/swiss/swiss-federal-writing-guidelines",
+      "code_url": "https://github.com/swiss/swiss-federal-writing-guidelines",
+      "sources": [
+        "https://www.opensource.admin.ch/en/softwares/6lv7ss/",
+        "https://github.com/swiss/swiss-federal-writing-guidelines"
+      ],
+      "limitations_fr": "Conventions institutionnelles : elles ne remplacent pas le ton d'une conversation professionnelle.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-graph",
+      "name": "Swiss Graph API / MCP",
+      "kind": "api",
+      "topics": [
+        "entreprise",
+        "mcp",
+        "api"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "API et MCP proposés par un service tiers de graphes de sociétés et personnes suisses.",
+      "url": "https://graph.swiss/developer",
+      "code_url": null,
+      "sources": [
+        "https://graph.swiss/developer"
+      ],
+      "limitations_fr": "Service non officiel ; traitement de données personnelles et accès étendu à examiner.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
       "id": "swiss-public-data-mcp",
       "name": "Swiss Public Data MCP — portefeuille",
       "kind": "catalogue",
@@ -548,25 +2055,430 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "termdat-mcp",
-      "name": "termdat-mcp",
+      "id": "swiss-academic-libraries-mcp",
+      "name": "swiss-academic-libraries-mcp",
       "kind": "mcp",
       "topics": [
         "mcp",
+        "education",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Chercher dans swisscovery et diverses collections patrimoniales et publications académiques suisses.",
+      "url": "https://github.com/malkreide/swiss-academic-libraries-mcp",
+      "code_url": "https://github.com/malkreide/swiss-academic-libraries-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-academic-libraries-mcp",
+        "https://swisscovery.slsp.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-academic-libraries-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-al",
+      "name": "Swiss-AL — corpus de discours suisses",
+      "kind": "corpus",
+      "topics": [
         "langues",
+        "recherche",
+        "medias"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Corpus multilingue de discours journalistiques et institutionnels suisses.",
+      "url": "https://clarin-ch.ch/resources/catalogue/",
+      "code_url": null,
+      "sources": [
+        "https://clarin-ch.ch/resources/catalogue/"
+      ],
+      "limitations_fr": "Accès restreint possible ; vérifier les licences dans CLARIN.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-apis-mcp",
+      "name": "swiss-apis-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "administration",
+        "geographie"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP communautaire réunissant plusieurs APIs officielles suisses dans une seule interface.",
+      "url": "https://github.com/clement8426/swiss-apis-mcp",
+      "code_url": null,
+      "sources": [
+        "https://github.com/clement8426/swiss-apis-mcp"
+      ],
+      "limitations_fr": "Intégration tierce ; vérifier les modalités de chaque API officielle.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-courts-mcp",
+      "name": "swiss-courts-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
         "administration"
       ],
       "swiss_relation": [
         "donnees-suisses"
       ],
-      "summary_fr": "Serveur MCP indépendant pour consulter la terminologie officielle TERMDAT.",
-      "url": "https://github.com/malkreide/termdat-mcp",
-      "code_url": "https://github.com/malkreide/termdat-mcp",
+      "summary_fr": "Rechercher des décisions judiciaires fédérales et cantonales via un index indépendant.",
+      "url": "https://github.com/malkreide/swiss-courts-mcp",
+      "code_url": "https://github.com/malkreide/swiss-courts-mcp",
       "sources": [
-        "https://github.com/malkreide/termdat-mcp",
-        "https://api.termdat.bk.admin.ch/swagger/index.html"
+        "https://github.com/malkreide/swiss-courts-mcp",
+        "https://entscheidsuche.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-courts-mcp/tree/master/audits"
       ],
-      "limitations_fr": "Client tiers non affilié à la Chancellerie fédérale ; conditions de réutilisation TERMDAT distinctes.",
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-cultural-heritage-mcp",
+      "name": "swiss-cultural-heritage-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "culture",
+        "medias"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer des inventaires, monuments et archives patrimoniales suisses.",
+      "url": "https://github.com/malkreide/swiss-cultural-heritage-mcp",
+      "code_url": "https://github.com/malkreide/swiss-cultural-heritage-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-cultural-heritage-mcp",
+        "https://www.sik-isea.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-cultural-heritage-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-culture-mcp",
+      "name": "swiss-culture-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "culture",
+        "medias"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accéder aux inventaires et publications sur le patrimoine et les traditions suisses.",
+      "url": "https://github.com/malkreide/swiss-culture-mcp",
+      "code_url": "https://github.com/malkreide/swiss-culture-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-culture-mcp",
+        "https://www.bak.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-culture-mcp/tree/main/audit"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-democracy-mcp",
+      "name": "swiss-democracy-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "administration",
+        "democratie"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les données historiques suisses de votations et les sources parlementaires publiques.",
+      "url": "https://github.com/malkreide/swiss-democracy-mcp",
+      "code_url": "https://github.com/malkreide/swiss-democracy-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-democracy-mcp",
+        "https://swissvotes.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-democracy-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-efv-mcp",
+      "name": "swiss-efv-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "finance",
+        "statistiques"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer les budgets, dépenses et statistiques des finances de la Confédération.",
+      "url": "https://github.com/malkreide/swiss-efv-mcp",
+      "code_url": "https://github.com/malkreide/swiss-efv-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-efv-mcp",
+        "https://www.efv.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-efv-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-electricity-mcp",
+      "name": "swiss-electricity-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "energie",
+        "infrastructure"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les données de consommation, tarifs électriques et indicateurs énergétiques publics.",
+      "url": "https://github.com/malkreide/swiss-electricity-mcp",
+      "code_url": "https://github.com/malkreide/swiss-electricity-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-electricity-mcp",
+        "https://energiedashboard.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-electricity-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-energy-mcp",
+      "name": "swiss-energy-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "energie",
+        "infrastructure"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer les installations et ressources énergétiques suisses depuis les sources OFEN et géodonnées.",
+      "url": "https://github.com/malkreide/swiss-energy-mcp",
+      "code_url": "https://github.com/malkreide/swiss-energy-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-energy-mcp",
+        "https://api3.geo.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-energy-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-environment-mcp",
+      "name": "swiss-environment-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "environnement",
+        "climat"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les données de pollution atmosphérique, hydrologie et environnement de l'OFEV.",
+      "url": "https://github.com/malkreide/swiss-environment-mcp",
+      "code_url": "https://github.com/malkreide/swiss-environment-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-environment-mcp",
+        "https://www.bafu.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-environment-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-food-safety-mcp",
+      "name": "swiss-food-safety-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "sante",
+        "alimentation"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer des données publiques suisses liées à la sécurité des aliments et au contrôle vétérinaire.",
+      "url": "https://github.com/malkreide/swiss-food-safety-mcp",
+      "code_url": "https://github.com/malkreide/swiss-food-safety-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-food-safety-mcp",
+        "https://www.blv.admin.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-food-safety-mcp/tree/main/docs/audit"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-holidays-mcp",
+      "name": "swiss-holidays-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "education",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les congés scolaires et jours fériés dans les 26 cantons suisses.",
+      "url": "https://github.com/malkreide/swiss-holidays-mcp",
+      "code_url": "https://github.com/malkreide/swiss-holidays-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-holidays-mcp",
+        "https://www.openholidaysapi.org/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-holidays-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-housing-mcp",
+      "name": "swiss-housing-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "statistiques",
+        "geographie"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter le registre fédéral suisse des bâtiments et logements et les données de construction.",
+      "url": "https://github.com/malkreide/swiss-housing-mcp",
+      "code_url": "https://github.com/malkreide/swiss-housing-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-housing-mcp",
+        "https://www.housing-stat.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-housing-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-ip-mcp",
+      "name": "swiss-ip-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer les informations suisses sur les marques, brevets et certificats via Swissreg.",
+      "url": "https://github.com/malkreide/swiss-ip-mcp",
+      "code_url": "https://github.com/malkreide/swiss-ip-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-ip-mcp",
+        "https://www.swissreg.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-ip-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; des identifiants ou clés d'accès peuvent être nécessaires. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-procurement-mcp",
+      "name": "swiss-procurement-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "droit",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter les appels d'offres et attributions de marchés publics publiés sur simap.",
+      "url": "https://github.com/malkreide/swiss-procurement-mcp",
+      "code_url": "https://github.com/malkreide/swiss-procurement-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-procurement-mcp",
+        "https://www.simap.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-procurement-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-road-mobility-mcp",
+      "name": "swiss-road-mobility-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "mobilite",
+        "transport"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Consulter la mobilité partagée, les bornes de recharge, le trafic routier et les parkings-relais.",
+      "url": "https://github.com/malkreide/swiss-road-mobility-mcp",
+      "code_url": "https://github.com/malkreide/swiss-road-mobility-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-road-mobility-mcp",
+        "https://opentransportdata.swiss/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-road-mobility-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-snb-mcp",
+      "name": "swiss-snb-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "finance",
+        "statistiques"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accéder aux cours de change et statistiques monétaires et financières publiées par la BNS.",
+      "url": "https://github.com/malkreide/swiss-snb-mcp",
+      "code_url": "https://github.com/malkreide/swiss-snb-mcp",
+      "sources": [
+        "https://github.com/malkreide/swiss-snb-mcp",
+        "https://data.snb.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-snb-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -592,47 +2504,263 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "register-mcp",
-      "name": "register-mcp",
+      "id": "swiss-transport-mcp",
+      "name": "swiss-transport-mcp",
       "kind": "mcp",
       "topics": [
         "mcp",
-        "entreprise",
-        "administration"
+        "mobilite",
+        "transport"
       ],
       "swiss_relation": [
         "donnees-suisses"
       ],
-      "summary_fr": "Serveur MCP indépendant pour les données d'entreprises Zefix et les publications associées.",
-      "url": "https://github.com/malkreide/register-mcp",
-      "code_url": "https://github.com/malkreide/register-mcp",
+      "summary_fr": "Planifier des trajets suisses et interroger perturbations, tarifs, occupation et compositions des trains.",
+      "url": "https://github.com/malkreide/swiss-transport-mcp",
+      "code_url": "https://github.com/malkreide/swiss-transport-mcp",
       "sources": [
-        "https://github.com/malkreide/register-mcp",
-        "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix"
+        "https://github.com/malkreide/swiss-transport-mcp",
+        "https://opentransportdata.swiss/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/swiss-transport-mcp/tree/main/audits"
       ],
-      "limitations_fr": "Client tiers ; les restrictions du registre et la protection des personnes restent applicables.",
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "fedlex-mcp",
-      "name": "fedlex-mcp",
-      "kind": "mcp",
+      "id": "swissbert",
+      "name": "SwissBERT",
+      "kind": "modele",
       "topics": [
-        "mcp",
-        "droit",
-        "administration"
+        "langues",
+        "intelligence-artificielle",
+        "recherche"
       ],
       "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Modèle multilingue spécialisé dans les textes suisses, proposé par ZurichNLP.",
+      "url": "https://github.com/ZurichNLP/swissbert",
+      "code_url": null,
+      "sources": [
+        "https://github.com/ZurichNLP/swissbert"
+      ],
+      "limitations_fr": "Distinction entre licences du modèle, du code et des corpus d'entraînement.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiss-coco",
+      "name": "SwissCoco — Swiss Corpora Collection",
+      "kind": "catalogue",
+      "topics": [
+        "langues",
+        "recherche",
+        "corpus"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
         "donnees-suisses"
       ],
-      "summary_fr": "Serveur MCP indépendant pour consulter le droit fédéral et des sources juridiques suisses.",
-      "url": "https://github.com/malkreide/fedlex-mcp",
-      "code_url": "https://github.com/malkreide/fedlex-mcp",
+      "summary_fr": "Inventaire de corpus linguistiques des langues et variétés de Suisse, avec leurs conditions d'usage.",
+      "url": "https://swissnlp.org/swiss-corpora-collection",
+      "code_url": null,
       "sources": [
-        "https://github.com/malkreide/fedlex-mcp",
-        "https://www.fedlex.admin.ch/"
+        "https://swissnlp.org/swiss-corpora-collection"
       ],
-      "limitations_fr": "Client tiers, non source juridique officielle en lui-même.",
+      "limitations_fr": "Les droits diffèrent selon les corpus ; certains interdisent l'utilisation commerciale.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swisscom-application-cloud",
+      "name": "Swisscom Application Cloud API",
+      "kind": "api",
+      "topics": [
+        "cloud",
+        "developpement",
+        "infrastructure"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "API pour la plateforme applicative Swisscom fondée sur Cloud Foundry.",
+      "url": "https://docs.developer.swisscom.com/devguide-sc/api.html",
+      "code_url": null,
+      "sources": [
+        "https://docs.developer.swisscom.com/devguide-sc/api.html"
+      ],
+      "limitations_fr": "Documentation du produit Application Cloud ; statut commercial actuel à vérifier.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swisscom-ai",
+      "name": "Swisscom Swiss AI Platform",
+      "kind": "service",
+      "topics": [
+        "intelligence-artificielle",
+        "api",
+        "infrastructure"
+      ],
+      "swiss_relation": [
+        "organisation-suisse",
+        "infrastructure-suisse"
+      ],
+      "summary_fr": "Infrastructure et endpoints d'inférence de modèles d'IA proposée par Swisscom.",
+      "url": "https://www.swisscom.ch/en/business/enterprise/offer/platforms-applications/data-driven-business/swiss-ai-platform.html",
+      "code_url": null,
+      "sources": [
+        "https://www.swisscom.ch/en/business/enterprise/offer/platforms-applications/data-driven-business/swiss-ai-platform.html",
+        "https://digital.swisscom.com/products/swiss-ai-platform/info"
+      ],
+      "limitations_fr": "Plateforme commerciale ; l'accès et les modèles dépendent de l'offre.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissmedic-swissdamed",
+      "name": "swissdamed — Swissmedic M2M API",
+      "kind": "api",
+      "topics": [
+        "sante",
+        "medecine",
+        "api"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Interface REST machine-à-machine pour les données suisses de dispositifs médicaux.",
+      "url": "https://www.swissmedic.ch/dam/swissmedic/en/dokumente/medizinprodukte/mep_urr/bw630_40_810e_pu_swissdamed_machine_to_machine_rest_api-documentation.pdf.download.pdf/BW630_40_810e_PU_swissdamed_Machine_to_Machine_REST_%20API_Documentation.pdf",
+      "code_url": null,
+      "sources": [
+        "https://www.swissmedic.ch/dam/swissmedic/en/dokumente/medizinprodukte/mep_urr/bw630_40_810e_pu_swissdamed_machine_to_machine_rest_api-documentation.pdf.download.pdf/BW630_40_810e_PU_swissdamed_Machine_to_Machine_REST_%20API_Documentation.pdf"
+      ],
+      "limitations_fr": "Documentation technique réglementaire PDF ; inscription et droits à vérifier.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissdec-elm",
+      "name": "Swissdec ELM — norme salaire",
+      "kind": "norme",
+      "topics": [
+        "salaires",
+        "entreprise",
+        "interop"
+      ],
+      "swiss_relation": [
+        "norme-suisse"
+      ],
+      "summary_fr": "Norme suisse de déclaration et transmission des données salariales (ELM).",
+      "url": "https://www.swissdec.ch/fr/elm",
+      "code_url": null,
+      "sources": [
+        "https://www.swissdec.ch/fr/elm"
+      ],
+      "limitations_fr": "Une norme n'est pas une API publique universelle ; versions et certification doivent être vérifiées.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissdox-liri",
+      "name": "Swissdox@LiRI",
+      "kind": "corpus",
+      "topics": [
+        "langues",
+        "medias",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Corpus de presse suisse destiné à la recherche linguistique et documentaire.",
+      "url": "https://www.liri.uzh.ch/en/services/swissdox.html",
+      "code_url": null,
+      "sources": [
+        "https://www.liri.uzh.ch/en/services/swissdox.html"
+      ],
+      "limitations_fr": "Accès réservé aux chercheurs autorisés ; usage et réutilisation restreints.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissgpt",
+      "name": "SwissGPT — AlpineAI",
+      "kind": "service",
+      "topics": [
+        "intelligence-artificielle",
+        "entreprise"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "Service d'IA pour entreprises proposé par la société suisse AlpineAI.",
+      "url": "https://alpineai.swiss/",
+      "code_url": null,
+      "sources": [
+        "https://alpineai.swiss/en/medien/"
+      ],
+      "limitations_fr": "Vérifier directement l'offre, l'hébergement et les fonctionnalités actuelles avant une intégration.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissnlp-speech",
+      "name": "SwissNLP — corpus vocaux suisses",
+      "kind": "catalogue",
+      "topics": [
+        "langues",
+        "recherche",
+        "voix"
+      ],
+      "swiss_relation": [
+        "institution-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Répertoire de corpus vocaux pour la transcription et la recherche sur le suisse allemand.",
+      "url": "https://swissnlp.org/home/activities/datasets",
+      "code_url": null,
+      "sources": [
+        "https://swissnlp.org/home/activities/datasets"
+      ],
+      "limitations_fr": "Modalités de téléchargement et droits distincts selon les enregistrements.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swisssalary-api",
+      "name": "SwissSalary API",
+      "kind": "api",
+      "topics": [
+        "salaires",
+        "entreprise",
+        "api"
+      ],
+      "swiss_relation": [
+        "organisation-suisse"
+      ],
+      "summary_fr": "API compatible Business Central pour les données et fonctionnalités de SwissSalary.",
+      "url": "https://api.docs.swisssalary.ch/",
+      "code_url": null,
+      "sources": [
+        "https://api.docs.swisssalary.ch/"
+      ],
+      "limitations_fr": "Dépend d'un tenant Microsoft Business Central et de SwissSalary.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swisstopo-reframe",
+      "name": "swisstopo — REFRAME Web API",
+      "kind": "api",
+      "topics": [
+        "geographie",
+        "api",
+        "interop"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST pour convertir les systèmes et coordonnées géographiques suisses.",
+      "url": "https://www.swisstopo.admin.ch/en/rest-api-geoservices-reframe-web",
+      "code_url": null,
+      "sources": [
+        "https://www.swisstopo.admin.ch/en/rest-api-geoservices-reframe-web"
+      ],
+      "limitations_fr": "Connaître la référence de coordonnées et la précision attendue.",
       "reviewed_at": "2026-11-16"
     },
     {
@@ -658,25 +2786,313 @@
       "reviewed_at": "2026-11-16"
     },
     {
-      "id": "i14y-mcp",
-      "name": "i14y-mcp",
-      "kind": "mcp",
+      "id": "switcheduid",
+      "name": "SWITCH edu-ID OIDC",
+      "kind": "api",
       "topics": [
-        "mcp",
+        "identite",
+        "education",
+        "interop"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Documentation d'intégration OpenID Connect pour la fédération académique SWITCH.",
+      "url": "https://help.switch.ch/eduid/docs/services/openid-connect",
+      "code_url": null,
+      "sources": [
+        "https://help.switch.ch/eduid/docs/services/openid-connect"
+      ],
+      "limitations_fr": "Service réservé aux partenaires admissibles de la fédération.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "switcheduid-tools",
+      "name": "SWITCH edu-ID Tools API",
+      "kind": "api",
+      "topics": [
+        "identite",
+        "education",
+        "api"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "API REST/JSON destinée aux services enregistrés de la fédération académique.",
+      "url": "https://help.switch.ch/eduid/unis/tech/toolsapi/",
+      "code_url": null,
+      "sources": [
+        "https://help.switch.ch/eduid/unis/tech/toolsapi/"
+      ],
+      "limitations_fr": "Fonctions réservées aux organisations et services autorisés.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "opendata-switch",
+      "name": "SWITCH Open Data Navigator",
+      "kind": "service",
+      "topics": [
+        "donnees-ouvertes",
+        "recherche",
+        "api"
+      ],
+      "swiss_relation": [
+        "institution-suisse"
+      ],
+      "summary_fr": "Service de découverte et fédération de jeux de données, avec interface GraphQL documentée.",
+      "url": "https://opendatanavigator.switch.ch/",
+      "code_url": null,
+      "sources": [
+        "https://opendatanavigator.switch.ch/"
+      ],
+      "limitations_fr": "Conditions d'usage du portail et des sources fédérées distinctes.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swiyu-android",
+      "name": "swiyu — Android Wallet",
+      "kind": "bibliotheque",
+      "topics": [
+        "identite",
+        "open-source",
+        "developpement"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Code source officiel du portefeuille Android de l'écosystème suisse d'identité numérique.",
+      "url": "https://github.com/swiyu-admin-ch/eidch-android-wallet",
+      "code_url": "https://github.com/swiyu-admin-ch/eidch-android-wallet",
+      "sources": [
+        "https://github.com/swiyu-admin-ch/eidch-android-wallet"
+      ],
+      "limitations_fr": "Version et niveau de maturité à vérifier avant tout déploiement.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "swissid-swiyu",
+      "name": "swiyu — Trust Infrastructure",
+      "kind": "api",
+      "topics": [
+        "identite",
         "administration",
         "interop"
       ],
       "swiss_relation": [
+        "administration-suisse",
+        "norme-suisse"
+      ],
+      "summary_fr": "Infrastructure suisse de vérification et d'émission d'attestations numériques vérifiables.",
+      "url": "https://swiyu.admin.ch/en/get-started",
+      "code_url": null,
+      "sources": [
+        "https://swiyu.admin.ch/en/get-started",
+        "https://swiyu-admin-ch.github.io/specifications/introduction"
+      ],
+      "limitations_fr": "L'accès à certaines fonctions exige l'enregistrement d'une organisation.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "termdat-api",
+      "name": "TERMDAT — API",
+      "kind": "api",
+      "topics": [
+        "langues",
+        "administration",
+        "terminologie"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
         "donnees-suisses"
       ],
-      "summary_fr": "Serveur MCP indépendant pour découvrir catalogues, concepts et APIs via I14Y.",
-      "url": "https://github.com/malkreide/i14y-mcp",
-      "code_url": "https://github.com/malkreide/i14y-mcp",
+      "summary_fr": "Recherche de terminologie administrative officielle dans les langues nationales.",
+      "url": "https://api.termdat.bk.admin.ch/swagger/index.html",
+      "code_url": null,
       "sources": [
-        "https://github.com/malkreide/i14y-mcp",
-        "https://apiconsole.i14y.admin.ch/"
+        "https://api.termdat.bk.admin.ch/swagger/index.html"
       ],
-      "limitations_fr": "Client tiers ; certaines ressources trouvées par I14Y sont soumises à licence ou authentification.",
+      "limitations_fr": "Les conditions de réutilisation du contenu sont distinctes de l'accès technique à l'API.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "termdat-mcp",
+      "name": "termdat-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "langues",
+        "administration"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Serveur MCP indépendant pour consulter la terminologie officielle TERMDAT.",
+      "url": "https://github.com/malkreide/termdat-mcp",
+      "code_url": "https://github.com/malkreide/termdat-mcp",
+      "sources": [
+        "https://github.com/malkreide/termdat-mcp",
+        "https://api.termdat.bk.admin.ch/swagger/index.html"
+      ],
+      "limitations_fr": "Client tiers non affilié à la Chancellerie fédérale ; conditions de réutilisation TERMDAT distinctes.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "transport-api-ch",
+      "name": "Transport API opendata.ch",
+      "kind": "api",
+      "topics": [
+        "transport",
+        "mobilite",
+        "api"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "API REST communautaire d'horaires et d'arrêts de transport public suisse.",
+      "url": "https://transport.opendata.ch/docs.html",
+      "code_url": null,
+      "sources": [
+        "https://transport.opendata.ch/docs.html",
+        "https://transport.opendata.ch/"
+      ],
+      "limitations_fr": "Service tiers non officiel ; disponibilité et limites d'utilisation propres à l'éditeur.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "trustbroker",
+      "name": "trustbroker.swiss",
+      "kind": "service",
+      "topics": [
+        "identite",
+        "administration",
+        "interop"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Service et documentation fédérale pour fédérer identités, applications et attributs.",
+      "url": "https://swiss.github.io/doc.trustbroker.swiss/",
+      "code_url": null,
+      "sources": [
+        "https://swiss.github.io/doc.trustbroker.swiss/",
+        "https://github.com/swiss/doc.trustbroker.swiss"
+      ],
+      "limitations_fr": "Conditions d'onboarding et d'exploitation à examiner.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "wsl-envidat-mcp",
+      "name": "wsl-envidat-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "environnement",
+        "climat"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Découvrir des ensembles de données scientifiques environnementales du WSL et d'EnviDat.",
+      "url": "https://github.com/malkreide/wsl-envidat-mcp",
+      "code_url": "https://github.com/malkreide/wsl-envidat-mcp",
+      "sources": [
+        "https://github.com/malkreide/wsl-envidat-mcp",
+        "https://www.envidat.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/wsl-envidat-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "zefix",
+      "name": "Zefix — registre du commerce",
+      "kind": "api",
+      "topics": [
+        "entreprise",
+        "administration",
+        "donnees-ouvertes"
+      ],
+      "swiss_relation": [
+        "administration-suisse",
+        "donnees-suisses"
+      ],
+      "summary_fr": "Recherche d'entreprises inscrites au registre du commerce et API REST de l'Office fédéral de la justice.",
+      "url": "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix",
+      "code_url": null,
+      "sources": [
+        "https://www.bj.admin.ch/fr/registre-du-commerce-zefix-et-regix"
+      ],
+      "limitations_fr": "API REST : modalités et accès à demander ; pas d'export intégral libre du registre.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "zh-education-mcp",
+      "name": "zh-education-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "education",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Explorer les données publiques zurichoises sur les établissements et statistiques de l'éducation.",
+      "url": "https://github.com/malkreide/zh-education-mcp",
+      "code_url": "https://github.com/malkreide/zh-education-mcp",
+      "sources": [
+        "https://github.com/malkreide/zh-education-mcp",
+        "https://www.zh.ch/de/bildung.html",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/zh-education-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "zh-document-research",
+      "name": "Zürich — Intelligent Document Research",
+      "kind": "bibliotheque",
+      "topics": [
+        "open-source",
+        "intelligence-artificielle",
+        "recherche"
+      ],
+      "swiss_relation": [
+        "administration-suisse"
+      ],
+      "summary_fr": "Projet de recherche documentaire hybride associant recherche et modèles de langage.",
+      "url": "https://github.com/machinelearningZH/document-research-tool",
+      "code_url": "https://github.com/machinelearningZH/document-research-tool",
+      "sources": [
+        "https://github.com/machinelearningZH/document-research-tool"
+      ],
+      "limitations_fr": "Projet ouvert ; statut actuel et dépendances à vérifier.",
+      "reviewed_at": "2026-11-16"
+    },
+    {
+      "id": "zurich-opendata-mcp",
+      "name": "zurich-opendata-mcp",
+      "kind": "mcp",
+      "topics": [
+        "mcp",
+        "statistiques",
+        "geographie"
+      ],
+      "swiss_relation": [
+        "donnees-suisses"
+      ],
+      "summary_fr": "Accéder aux données ouvertes de la Ville de Zurich : météo, stationnement, géographie et autres.",
+      "url": "https://github.com/malkreide/zurich-opendata-mcp",
+      "code_url": "https://github.com/malkreide/zurich-opendata-mcp",
+      "sources": [
+        "https://github.com/malkreide/zurich-opendata-mcp",
+        "https://data.stadt-zuerich.ch/",
+        "https://github.com/malkreide/swiss-public-data-mcp",
+        "https://github.com/malkreide/zurich-opendata-mcp/tree/main/audits"
+      ],
+      "limitations_fr": "Projet communautaire indépendant, non officiel ; les données restent régies par leurs sources. Statut déclaré par son éditeur (inventaire au 2026-08-18), non testé ici.",
       "reviewed_at": "2026-11-16"
     }
   ]
